@@ -1,8 +1,8 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
-import angularIcon from '@iconify/icons-logos/angular-icon';
 import reactIcon from '@iconify/icons-logos/react';
-import vueIcon from '@iconify/icons-logos/vue';
+import appleIcon from '@iconify/icons-logos/linux-tux';
+import nestIcon from '@iconify/icons-logos/nodejs-icon-alt';
 
 interface AboutData {
   title: string;
@@ -31,15 +31,15 @@ const About: React.FC<AboutProps> = ({ data }) => {
                   alt="Avatar placeholder"
                 />
                 <Icon
-                  icon={angularIcon}
-                  style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
-                />
-                <Icon
                   icon={reactIcon}
                   style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
                 />
                 <Icon
-                  icon={vueIcon}
+                  icon={nestIcon}
+                  style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
+                />
+                <Icon
+                  icon={appleIcon}
                   style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
                 />
               </span>

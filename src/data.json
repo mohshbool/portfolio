@@ -1,10 +1,10 @@
 {
   "header": {
-    "name": "John Doe",
-    "titles": ["Software Engineer", "Web Developer", "UI/UX Designer"]
+    "name": "Mohammad Shbool",
+    "titles": ["Full Stack Software Engineer", "Mobile Application Developer"]
   },
   "about": {
-    "image": "myProfile.jpg",
+    "image": "mohammad.shbool.jpeg",
     "title": "Hello World!",
     "description": "I am a software engineer with 5 years of experience in web development. I have worked on various projects and have a good understanding of the latest technologies. I am passionate about creating beautiful and user-friendly interfaces."
   },
