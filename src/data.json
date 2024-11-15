@@ -1,0 +1,161 @@
+{
+  "header": {
+    "name": "John Doe",
+    "titles": ["Software Engineer", "Web Developer", "UI/UX Designer"]
+  },
+  "about": {
+    "image": "myProfile.jpg",
+    "title": "Hello World!",
+    "description": "I am a software engineer with 5 years of experience in web development. I have worked on various projects and have a good understanding of the latest technologies. I am passionate about creating beautiful and user-friendly interfaces."
+  },
+  "projects": [
+    {
+      "title": "Project 1",
+      "description": "This is a project description.",
+      "startDate": "2018",
+      "images": [
+        "images/portfolio/adventure/p1.jpg",
+        "images/portfolio/adventure/p2.jpg"
+      ],
+      "technologies": [
+        {
+          "class": "devicon-angularjs-plain",
+          "name": "Angular"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-csharp-plain",
+          "name": "C#"
+        }
+      ],
+      "url": "www.example.com"
+    },
+    {
+      "title": "Project 2",
+      "description": "This is a project description.",
+      "startDate": "2018",
+      "images": [
+        "images/portfolio/adventure/p1.jpg",
+        "images/portfolio/adventure/p2.jpg"
+      ],
+      "technologies": [
+        {
+          "class": "devicon-angularjs-plain",
+          "name": "Angular"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-csharp-plain",
+          "name": "C#"
+        }
+      ],
+      "url": "www.example.com"
+    },
+    {
+      "title": "Project 3",
+      "description": "This is a project description.",
+      "startDate": "2018",
+      "images": [
+        "images/portfolio/adventure/p1.jpg",
+        "images/portfolio/adventure/p2.jpg"
+      ],
+      "technologies": [
+        {
+          "class": "devicon-angularjs-plain",
+          "name": "Angular"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-csharp-plain",
+          "name": "C#"
+        }
+      ],
+      "url": "www.example.com"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML 5",
+      "class": "devicon-html5-plain"
+    },
+    {
+      "name": "CSS 3",
+      "class": "devicon-css3-plain"
+    },
+    {
+      "name": "Angular",
+      "class": "devicon-angularjs-plain"
+    },
+    {
+      "name": "TypeScript",
+      "class": "devicon-typescript-plain"
+    },
+    {
+      "name": "JavaScript",
+      "class": "devicon-javascript-plain"
+    },
+    {
+      "name": "Sass",
+      "class": "devicon-sass-original"
+    },
+    {
+      "name": "Bootstrap",
+      "class": "devicon-bootstrap-plain"
+    },
+    {
+      "name": "C#",
+      "class": "devicon-csharp-plain"
+    },
+    {
+      "name": "MySql",
+      "class": "devicon-mysql-plain"
+    }
+  ],
+  "experience": [
+    {
+      "company": "DefOpenSource",
+      "title": "Front-End Developer",
+      "years": "10.2019 - present",
+      "mainTech": ["Angular 8/9/10"],
+      "technologies": [
+        "REST API",
+        "RxJS",
+        "JavaScript",
+        "Bootstrap",
+        "MDBootstrap",
+        "EF Core",
+        ".NET Core",
+        "SignalR",
+        "Angular Material"
+      ]
+    },
+    {
+      "company": "Serros Solutions",
+      "title": "Intern",
+      "years": "01.2018 - 09.2019",
+      "mainTech": ["Angular 7/8"],
+      "technologies": ["RxJS", "Django", "PHP", "JavaScript", "DHTMLX Gantt"]
+    }
+  ],
+  "social": [
+    {
+      "name": "github",
+      "url": "https://github.com",
+      "class": "fab fa-github"
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com",
+      "class": "fab fa-instagram"
+    }
+  ]
+}
