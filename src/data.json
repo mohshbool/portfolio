@@ -35,6 +35,10 @@
         {
           "class": "devicon-postgresql-plain",
           "name": "postgresql"
+        },
+        {
+          "class": "devicon-digitalocean-plain",
+          "name": "Digital Ocean"
         }
       ],
       "url": "https://safarpoints.com"
@@ -69,6 +73,10 @@
         {
           "class": "devicon-mongodb-plain",
           "name": "MongoDB"
+        },
+        {
+          "class": "devicon-amazonwebservices-plain",
+          "name": "AWS"
         }
       ],
       "url": "https://github.com/mohshbool/mattal-app"
