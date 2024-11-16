@@ -10,9 +10,39 @@
   },
   "projects": [
     {
+      "title": "Learn Quran",
+      "description": "Learn Quran is a hybrid open-source platform for testing your knowledge in the Holy Quran! This project was originally created for educational purposes.",
+      "startDate": "2019",
+      "slug": "learn-quran",
+      "images": ["p1.png", "p2.png"],
+      "technologies": [
+        {
+          "class": "devicon-osi-plain",
+          "name": "Open Source"
+        },
+        {
+          "class": "devicon-react-plain",
+          "name": "React"
+        },
+        {
+          "class": "devicon-firebase-plain",
+          "name": "Firebase"
+        },
+        {
+          "class": "devicon-materialui-plain",
+          "name": "Material UI"
+        },
+        {
+          "class": "devicon-vercel-plain",
+          "name": "Vercel "
+        }
+      ],
+      "url": "https://github.com/learn-quran"
+    },
+    {
       "title": "Safar Points",
       "description": "Safar Points is a free rewards program where members earn travel points from purchases and engagement with partners, redeemable for flights, hotels, and activities on the platform.",
-      "startDate": "2018",
+      "startDate": "2020",
       "slug": "safar-points",
       "images": ["p1.png", "p2.png"],
       "technologies": [
@@ -51,6 +81,10 @@
       "images": ["p1.png", "p2.png"],
       "technologies": [
         {
+          "class": "devicon-osi-plain",
+          "name": "Open Source"
+        },
+        {
           "class": "devicon-react-plain",
           "name": "React Native"
         },
@@ -63,8 +97,8 @@
           "name": "Redux"
         },
         {
-          "class": "devicon-nestjs-plain",
-          "name": "NestJS"
+          "class": "devicon-expressjs-plain",
+          "name": "Express JS"
         },
         {
           "class": "devicon-rxjs-plain",
