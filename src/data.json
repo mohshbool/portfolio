@@ -165,100 +165,108 @@
   "experience": [
     {
       "company": "Reach World",
-      "title": "React Native Developer",
+      "companyUrl": "https://reachworld.com",
+      "title": "Mobile Application Developer",
       "years": "09.2023 - present",
       "mainTechnology": "React Native",
       "icon": "fa-react",
       "technologies": [
+        "React Native",
         "TypeScript",
-        "React Hooks",
-        "GraphQL",
         "REST API",
-        "WebSockets",
+        "Analytics",
         "Deep Linking",
         "In-App Purchases",
-        "Analytics"
+        "Techhnical Writing"
       ]
     },
     {
       "company": "Jordan Open Source Association",
+      "companyUrl": "https://josa.ngo",
       "title": "Community Officer",
       "years": "03.2022 - 08.2023",
       "mainTechnology": "Open Source",
       "icon": "fa-osi",
       "technologies": [
+        "Project Management",
         "Public Speaking",
         "Community Development",
-        "Event Management",
-        "Brand Management",
-        "Technical Communication"
+        "Event Organization",
+        "Open Source Management"
       ]
     },
     {
       "company": "We.The.Makers",
+      "companyUrl": "https://wethemakers.dev",
       "title": "Technical Team Lead",
       "years": "09.2021 - 04.2022",
       "mainTechnology": "React Native",
       "icon": "fa-react",
       "technologies": [
-        "JIRA",
-        "GitHub",
         "Project Management",
         "Technical Leadership",
-        "React Hooks",
-        "Team Management"
+        "Team Management",
+        "JIRA",
+        "Confluence",
+        "Technical Writing",
+        "React Native",
+        "NestJS"
       ]
     },
     {
       "company": "We.The.Makers",
-      "title": "React Native Developer",
+      "companyUrl": "https://wethemakers.dev",
+      "title": "Mobile Application Developer",
       "years": "09.2020 - 08.2021",
       "mainTechnology": "React Native",
       "icon": "fa-react",
       "technologies": [
+        "React Native",
         "TypeScript",
-        "Fastlane",
-        "CodePush",
         "Native Modules",
+        "CI/CD",
         "Firebase",
-        "Git",
-        "React Hooks"
+        "Over the Air Updates",
+        "NestJS",
+        "GraphQL"
       ]
     },
     {
       "company": "Ivvest",
+      "companyUrl": "https://ivvest.com",
       "title": "Internet of Things Engineer",
       "years": "11.2020 - 04.2021",
       "mainTechnology": "Internet of Things",
       "icon": "fa-raspberry-pi",
       "technologies": [
-        "Embedded Systems",
         "Arduino",
         "Raspberry Pi",
         "Process Automation",
-        "Network Architecture"
+        "Network Design"
       ]
     },
     {
       "company": "We.The.Makers",
-      "title": "Back End Developer",
+      "companyUrl": "https://wethemakers.dev",
+      "title": "Full Stack Software Engineer",
       "years": "01.2019 - 05.2020",
       "mainTechnology": "NestJS",
       "icon": "fa-node-js",
       "technologies": [
         "TypeScript",
-        "REST API",
+        "NestJS",
         "GraphQL",
         "Docker",
         "Kubernetes",
         "CI/CD",
-        "DevOps",
-        "SEO"
+        "React Native",
+        "MongoDB"
       ]
     },
     {
       "company": "cg imagine+invent",
-      "title": "React Native Developer",
+      "companyUrl": "https://cgiandi.com",
+      "title": "Full Stack Software Engineer",
       "years": "01.2018 - 12.2018",
       "mainTechnology": "React Native",
       "icon": "fa-react",

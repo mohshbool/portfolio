@@ -20,6 +20,7 @@ export interface Project {
 
 export interface Experience {
   company: string;
+  companyUrl: string;
   title: string;
   years: string;
   mainTechnology: string;
