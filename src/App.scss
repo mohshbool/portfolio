@@ -359,6 +359,13 @@ header h1 {
 .close-icon {
 	color: black;
 	font-weight: lighter !important;
+
+	-webkit-transition: -webkit-transform .25s ease-in-out;
+	transition: transform .25s ease-in-out;
+	&:hover {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+	}
 }
 
 .modal-description {
