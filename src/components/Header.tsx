@@ -2,7 +2,7 @@ import React, { memo, useCallback, useState } from 'react';
 import Typical from 'react-typical';
 import Switch from 'react-switch';
 import { Header as DATA } from '../data';
-
+import './Header.css';
 interface HeaderProps {
   data: DATA;
 }
