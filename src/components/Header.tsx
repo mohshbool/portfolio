@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useState } from 'react';
+import React, { memo, useCallback, useEffect, useRef, useState } from 'react';
 import Typical from 'react-typical';
 import Switch from 'react-switch';
 import { Header as DATA } from '../data';
@@ -8,8 +8,17 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ data }) => {
+  const switchRef = useRef<Switch>(null);
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
 
+  useEffect(() => {
+    // set dark mode on inital load if user prefers dark mode
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      triggerSwitch();
+    }
+  }, []);
+
+  // set theme in dom
   const setTheme = useCallback(() => {
     const body = document.body;
     const newTheme =
@@ -17,6 +26,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
     body.setAttribute('data-theme', newTheme);
   }, []);
 
+  // event handler for theme switch
   const onThemeSwitchChange = useCallback(
     (checked: boolean) => {
       setIsDarkTheme(checked);
@@ -24,6 +34,17 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
     },
     [setTheme]
   );
+
+  // programmatically toggle switch
+  const triggerSwitch = useCallback(() => {
+    if (switchRef.current) {
+      switchRef.current.setState(prevState => ({
+        // @ts-expect-error hard set of swtich
+        checked: !prevState.checked,
+      }));
+      onThemeSwitchChange(!isDarkTheme);
+    }
+  }, [isDarkTheme, onThemeSwitchChange]);
 
   const typicalTitles = data.titles
     .map(title => [title.toUpperCase(), 1500])
@@ -62,6 +83,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
               <HeaderTitleTypeAnimation />
             </div>
             <Switch
+              ref={switchRef}
               checked={isDarkTheme}
               onChange={onThemeSwitchChange}
               offColor="#baaa80"
