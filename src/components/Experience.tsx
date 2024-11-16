@@ -61,9 +61,6 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => {
                     className="experience-badge mr-2 mb-2"
                     key={i}
                     bg="#f9f5e9"
-                    data-theme={
-                      document.querySelector('body')?.dataset['theme']
-                    }
                   >
                     {technology}
                   </Badge>
