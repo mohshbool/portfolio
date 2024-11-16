@@ -41,7 +41,7 @@ const Projects: React.FC<ProjectsProps> = ({ data }) => {
           <div className="row mx-auto">
             {data.map(project => (
               <div
-                className="col-sm-12 col-md-6 col-lg-4"
+                className="col-sm-12 col-md-6 col-lg-4 project-container"
                 key={project.title}
                 style={{ cursor: 'pointer' }}
               >
@@ -49,7 +49,7 @@ const Projects: React.FC<ProjectsProps> = ({ data }) => {
                   <div className="foto" onClick={() => showModal(project)}>
                     <div>
                       <img
-                        src={project.images[0]}
+                        src={`images/portfolio/${project.slug}/${project.images[0]}`}
                         alt="projectImages"
                         height="230"
                         style={{

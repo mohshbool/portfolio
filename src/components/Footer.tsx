@@ -22,7 +22,9 @@ const Footer: React.FC<FooterProps> = ({ social, name }) => {
 
         <div className="copyright py-4 text-center">
           <div className="container">
-            <small>Copyright &copy; {name} </small>
+            <small>
+              Copyright &copy; {name} {new Date().getFullYear()}
+            </small>
           </div>
         </div>
       </div>

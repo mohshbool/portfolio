@@ -14,6 +14,7 @@ export interface Project {
   startDate: string;
   description: string;
   technologies: Technology[];
+  slug: string;
   url: string;
 }
 
@@ -21,7 +22,8 @@ export interface Experience {
   company: string;
   title: string;
   years: string;
-  mainTech: string[];
+  mainTechnology: string;
+  icon: string;
   technologies: string[];
 }
 

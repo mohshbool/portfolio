@@ -59,7 +59,9 @@ const ProjectDetailsModal: React.FC<ProjectDetailsModalProps> = ({
             animation="scaleOutAnimation"
             className="slider-image"
           >
-            {data?.images.map((elem, i) => <div key={i} data-src={elem} />)}
+            {data?.images.map((elem, i) => (
+              <div key={i} data-src={`images/portfolio/${data.slug}/${elem}`} />
+            ))}
           </AwesomeSlider>
         </div>
         <div className="col-md-10 mx-auto">
@@ -88,7 +90,13 @@ const ProjectDetailsModal: React.FC<ProjectDetailsModalProps> = ({
                         className={technology.class}
                         style={{ fontSize: '300%' }}
                       >
-                        <p className="text-center" style={{ fontSize: '30%' }}>
+                        <p
+                          className="text-center"
+                          style={{
+                            fontSize: '38%',
+                            fontWeight: 300,
+                          }}
+                        >
                           {technology.name}
                         </p>
                       </i>

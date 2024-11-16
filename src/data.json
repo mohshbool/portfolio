@@ -6,156 +6,203 @@
   "about": {
     "image": "mohammad.shbool.jpeg",
     "title": "Hello World!",
-    "description": "I am a software engineer with 5 years of experience in web development. I have worked on various projects and have a good understanding of the latest technologies. I am passionate about creating beautiful and user-friendly interfaces."
+    "description": "I am a self-taught software engineer with over 6 years of experience in development. I have worked on various projects and have a good understanding of the latest technologies. I am passionate about creating beautiful and user-friendly interfaces."
   },
   "projects": [
     {
-      "title": "Project 1",
-      "description": "This is a project description.",
+      "title": "Safar Points",
+      "description": "Safar Points is a free rewards program where members earn travel points from purchases and engagement with partners, redeemable for flights, hotels, and activities on the platform.",
       "startDate": "2018",
-      "images": [
-        "images/portfolio/adventure/p1.jpg",
-        "images/portfolio/adventure/p2.jpg"
-      ],
+      "slug": "safar-points",
+      "images": ["p1.png", "p2.png"],
       "technologies": [
         {
-          "class": "devicon-angularjs-plain",
-          "name": "Angular"
+          "class": "devicon-react-plain",
+          "name": "React"
         },
         {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
+          "class": "devicon-nestjs-plain",
+          "name": "NestJS"
         },
         {
-          "class": "devicon-csharp-plain",
-          "name": "C#"
+          "class": "devicon-graphql-plain",
+          "name": "GraphQL"
+        },
+        {
+          "class": "devicon-mongodb-plain",
+          "name": "MongoDB"
         }
       ],
-      "url": "www.example.com"
-    },
-    {
-      "title": "Project 2",
-      "description": "This is a project description.",
-      "startDate": "2018",
-      "images": [
-        "images/portfolio/adventure/p1.jpg",
-        "images/portfolio/adventure/p2.jpg"
-      ],
-      "technologies": [
-        {
-          "class": "devicon-angularjs-plain",
-          "name": "Angular"
-        },
-        {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
-        },
-        {
-          "class": "devicon-csharp-plain",
-          "name": "C#"
-        }
-      ],
-      "url": "www.example.com"
-    },
-    {
-      "title": "Project 3",
-      "description": "This is a project description.",
-      "startDate": "2018",
-      "images": [
-        "images/portfolio/adventure/p1.jpg",
-        "images/portfolio/adventure/p2.jpg"
-      ],
-      "technologies": [
-        {
-          "class": "devicon-angularjs-plain",
-          "name": "Angular"
-        },
-        {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
-        },
-        {
-          "class": "devicon-csharp-plain",
-          "name": "C#"
-        }
-      ],
-      "url": "www.example.com"
+      "url": "safarpoints.com"
     }
   ],
   "skills": [
-    {
-      "name": "HTML 5",
-      "class": "devicon-html5-plain"
-    },
-    {
-      "name": "CSS 3",
-      "class": "devicon-css3-plain"
-    },
-    {
-      "name": "Angular",
-      "class": "devicon-angularjs-plain"
-    },
     {
       "name": "TypeScript",
       "class": "devicon-typescript-plain"
     },
     {
-      "name": "JavaScript",
-      "class": "devicon-javascript-plain"
+      "name": "Python",
+      "class": "devicon-python-plain"
     },
     {
-      "name": "Sass",
-      "class": "devicon-sass-original"
+      "name": "React",
+      "class": "devicon-react-plain"
     },
     {
-      "name": "Bootstrap",
-      "class": "devicon-bootstrap-plain"
+      "name": "Node.js",
+      "class": "devicon-nodejs-plain"
     },
     {
-      "name": "C#",
-      "class": "devicon-csharp-plain"
+      "name": "NestJS",
+      "class": "devicon-nestjs-plain"
+    },
+    {
+      "name": "GraphQL",
+      "class": "devicon-graphql-plain"
+    },
+    {
+      "name": "Docker",
+      "class": "devicon-docker-plain"
+    },
+    {
+      "name": "Kubernetes",
+      "class": "devicon-kubernetes-plain"
+    },
+    {
+      "name": "MongoDB",
+      "class": "devicon-mongodb-plain"
     },
     {
       "name": "MySql",
       "class": "devicon-mysql-plain"
+    },
+    {
+      "name": "Arduino",
+      "class": "devicon-arduino-plain"
     }
   ],
   "experience": [
     {
-      "company": "DefOpenSource",
-      "title": "Front-End Developer",
-      "years": "10.2019 - present",
-      "mainTech": ["Angular 8/9/10"],
+      "company": "Reach World",
+      "title": "React Native Developer",
+      "years": "09.2023 - present",
+      "mainTechnology": "React Native",
+      "icon": "fa-react",
       "technologies": [
+        "TypeScript",
+        "React Hooks",
+        "GraphQL",
         "REST API",
-        "RxJS",
-        "JavaScript",
-        "Bootstrap",
-        "MDBootstrap",
-        "EF Core",
-        ".NET Core",
-        "SignalR",
-        "Angular Material"
+        "WebSockets",
+        "Deep Linking",
+        "In-App Purchases",
+        "Analytics"
       ]
     },
     {
-      "company": "Serros Solutions",
-      "title": "Intern",
-      "years": "01.2018 - 09.2019",
-      "mainTech": ["Angular 7/8"],
-      "technologies": ["RxJS", "Django", "PHP", "JavaScript", "DHTMLX Gantt"]
+      "company": "Jordan Open Source Association",
+      "title": "Community Officer",
+      "years": "03.2022 - 08.2023",
+      "mainTechnology": "Open Source",
+      "icon": "fa-osi",
+      "technologies": [
+        "Public Speaking",
+        "Community Development",
+        "Event Management",
+        "Brand Management",
+        "Technical Communication"
+      ]
+    },
+    {
+      "company": "We.The.Makers",
+      "title": "Technical Team Lead",
+      "years": "09.2021 - 04.2022",
+      "mainTechnology": "React Native",
+      "icon": "fa-react",
+      "technologies": [
+        "JIRA",
+        "GitHub",
+        "Project Management",
+        "Technical Leadership",
+        "React Hooks",
+        "Team Management"
+      ]
+    },
+    {
+      "company": "We.The.Makers",
+      "title": "React Native Developer",
+      "years": "09.2020 - 08.2021",
+      "mainTechnology": "React Native",
+      "icon": "fa-react",
+      "technologies": [
+        "TypeScript",
+        "Fastlane",
+        "CodePush",
+        "Native Modules",
+        "Firebase",
+        "Git",
+        "React Hooks"
+      ]
+    },
+    {
+      "company": "Ivvest",
+      "title": "Internet of Things Engineer",
+      "years": "11.2020 - 04.2021",
+      "mainTechnology": "Internet of Things",
+      "icon": "fa-raspberry-pi",
+      "technologies": [
+        "Embedded Systems",
+        "Arduino",
+        "Raspberry Pi",
+        "Process Automation",
+        "Network Architecture"
+      ]
+    },
+    {
+      "company": "We.The.Makers",
+      "title": "Back End Developer",
+      "years": "01.2019 - 05.2020",
+      "mainTechnology": "NestJS",
+      "icon": "fa-node-js",
+      "technologies": [
+        "TypeScript",
+        "REST API",
+        "GraphQL",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "DevOps",
+        "SEO"
+      ]
+    },
+    {
+      "company": "cg imagine+invent",
+      "title": "React Native Developer",
+      "years": "01.2018 - 12.2018",
+      "mainTechnology": "React Native",
+      "icon": "fa-react",
+      "technologies": [
+        "TypeScript",
+        "React Hooks",
+        "Axios",
+        "Formik",
+        "Redux",
+        "React Context",
+        "UI Components"
+      ]
     }
   ],
   "social": [
     {
       "name": "github",
-      "url": "https://github.com",
+      "url": "https://github.com/mohshbool",
       "class": "fab fa-github"
     },
     {
-      "name": "instagram",
-      "url": "https://www.instagram.com",
-      "class": "fab fa-instagram"
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/mohammad-shbool",
+      "class": "fab fa-linkedin"
     }
   ]
 }

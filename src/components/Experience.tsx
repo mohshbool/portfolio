@@ -34,7 +34,12 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => {
                 color: '#fff',
                 textAlign: 'center',
               }}
-              icon={<i className="fab fa-angular experience-icon"></i>}
+              icon={
+                <i
+                  className={`fab ${experience.icon} experience-icon`}
+                  aria-placeholder={experience.mainTechnology}
+                ></i>
+              }
               key={i}
             >
               <h3
@@ -51,7 +56,15 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => {
               </h4>
               <div style={{ textAlign: 'left', marginTop: '15px' }}>
                 {experience.technologies.map((technology, i) => (
-                  <Badge pill className="experience-badge mr-2 mb-2" key={i}>
+                  <Badge
+                    pill
+                    className="experience-badge mr-2 mb-2"
+                    key={i}
+                    bg="#f9f5e9"
+                    data-theme={
+                      document.querySelector('body')?.dataset['theme']
+                    }
+                  >
                     {technology}
                   </Badge>
                 ))}

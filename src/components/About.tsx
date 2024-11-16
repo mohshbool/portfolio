@@ -26,27 +26,27 @@ const About: React.FC<AboutProps> = ({ data }) => {
             <div className="polaroid">
               <span style={{ cursor: 'auto' }}>
                 <img
-                  height="250px"
+                  height="300px"
                   src={`images/${data.image}`}
                   alt="Avatar placeholder"
                 />
                 <Icon
                   icon={reactIcon}
-                  style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
+                  style={{ fontSize: '450%', margin: '9% 5% 0 5%' }}
                 />
                 <Icon
                   icon={nestIcon}
-                  style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
+                  style={{ fontSize: '450%', margin: '9% 5% 0 5%' }}
                 />
                 <Icon
                   icon={appleIcon}
-                  style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
+                  style={{ fontSize: '450%', margin: '9% 5% 0 5%' }}
                 />
               </span>
             </div>
           </div>
 
-          <div className="col-md-8 center">
+          <div className="col-md-8 left">
             <div className="col-md-10">
               <div className="card">
                 <div className="card-header">
@@ -72,7 +72,7 @@ const About: React.FC<AboutProps> = ({ data }) => {
                   className="card-body font-trebuchet text-justify ml-3 mr-3"
                   style={{
                     height: 'auto',
-                    fontSize: '132%',
+                    fontSize: '145%',
                     lineHeight: '200%',
                   }}
                 >

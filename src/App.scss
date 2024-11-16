@@ -213,6 +213,21 @@ header h1 {
 	position: relative;
 }
 
+.project-container {
+	filter: drop-shadow(2px 2px 5px #8c8c8c);
+
+	div.foto div {
+		border-radius: 3px;
+	}
+	img {
+		border-radius: 6px;
+	}
+}
+
+.modal-description {
+	font-weight: 500;
+}
+
 .link-href {
 	color: black;
 }
@@ -264,11 +279,19 @@ header h1 {
 	font-size: 11px !important;
 	text-align: left !important;
 	padding: 5px 8px 5px 8px !important;
+	margin: 1px 2px;
 	vertical-align: baseline;
 	background-color: #f9f5e9 !important;
-	color: black;
+	color: black !important;
 	font-weight: lighter !important;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ccc;
+	&[data-theme='dark'] {
+		color: #ffffff !important;
+		border-color: #c5c5c5;
+	  }
 }
 
 .vertical-timeline-element-date {
