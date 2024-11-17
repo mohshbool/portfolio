@@ -291,6 +291,11 @@
       "name": "linkedin",
       "url": "https://www.linkedin.com/in/mohammad-shbool",
       "class": "fab fa-linkedin"
+    },
+    {
+      "name": "email",
+      "url": "mailto:contact@shbool.net",
+      "class": "fa fa-paper-plane"
     }
   ]
 }
