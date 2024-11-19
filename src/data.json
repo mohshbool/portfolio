@@ -114,6 +114,32 @@
         }
       ],
       "url": "https://github.com/learn-quran"
+    },
+    {
+      "title": "Bunni (بُنّي)",
+      "description": "An informative form-enabled website for a local business in Jordan. I built this website with React.",
+      "startDate": "2019",
+      "slug": "bunni",
+      "images": ["p1.png", "p2.png"],
+      "technologies": [
+        {
+          "class": "devicon-react-plain",
+          "name": "React"
+        },
+        {
+          "class": "devicon-firebase-plain",
+          "name": "Firebase"
+        },
+        {
+          "class": "devicon-materialui-plain",
+          "name": "Material UI"
+        },
+        {
+          "class": "devicon-vercel-plain",
+          "name": "Vercel"
+        }
+      ],
+      "url": "https://bunni.vercel.app"
     }
   ],
   "skills": [
