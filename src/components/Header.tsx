@@ -9,11 +9,21 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ data }) => {
   const switchRef = useRef<Switch>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
   const [isPortrait, setIsPortrait] = useState<boolean>(
     window.innerHeight > window.innerWidth
   );
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isAtTop, setisAtTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setisAtTop(window.scrollY <= 1);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -97,7 +107,6 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
         </video>
         <div className="video-overlay"></div>
       </div>
-
       <div className="row aligner" style={{ height: '100%' }}>
         <div className="col-md-12">
           <div>
@@ -157,6 +166,14 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
           </div>
         </div>
       </div>
+      <div
+        className="scrolldown-arrow"
+        style={{ bottom: '25px', display: isAtTop ? 'block' : 'none' }}
+      />
+      <div
+        className="scrolldown-arrow"
+        style={{ bottom: '40px', display: isAtTop ? 'block' : 'none' }}
+      />
     </header>
   );
 };
