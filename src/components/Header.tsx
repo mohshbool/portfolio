@@ -10,6 +10,23 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ data }) => {
   const switchRef = useRef<Switch>(null);
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
+  const [isPortrait, setIsPortrait] = useState<boolean>(
+    window.innerHeight > window.innerWidth
+  );
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsPortrait(window.innerHeight > window.innerWidth);
+    };
+
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5;
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     // set dark mode on inital load if user prefers dark mode
@@ -63,10 +80,24 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
   );
 
   return (
-    <header
-      id="home"
-      style={{ height: window.innerHeight - 140, display: 'block' }}
-    >
+    <header id="home" style={{ height: window.innerHeight, display: 'block' }}>
+      <div className="video-background">
+        <video
+          ref={videoRef}
+          key={isPortrait ? 'portrait' : 'landscape'}
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source
+            src={`/videos/bg${isPortrait ? `_vertical` : Math.floor(Math.random() * 3)}.mp4`}
+            type="video/mp4"
+          />
+        </video>
+        <div className="video-overlay"></div>
+      </div>
+
       <div className="row aligner" style={{ height: '100%' }}>
         <div className="col-md-12">
           <div>

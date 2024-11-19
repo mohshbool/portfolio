@@ -59,14 +59,45 @@ header {
 	-webkit-background-size: cover;
 	text-align: center;
 	overflow: hidden;
-	background-color: #e9d5a1;
+	// background-color: #e9d5a1;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	padding-top: 150px;
 	padding-bottom: 0;
+	h1, .header-icon, .title-container, .react-switch{
+		color: white;
+		position: relative;
+		z-index: 2;
+	}
 }
+
+.video-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	
+	video {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;
+	}
+	
+	.video-overlay {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background: rgba(0, 0, 0, 0.5); // Adjust opacity as needed
+	  backdrop-filter: blur(5px);
+	  -webkit-backdrop-filter: blur(5px); // Safari support
+	}
+  }
 
 .project-date {
 	font-size: 16px;
@@ -93,6 +124,7 @@ header h1 {
 	text-align: center;
 	font-weight: 600 !important;
 	color: #353239;
+	color: #F8F5F4;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	margin: 0 auto 18px auto;
 	width: 100%;
