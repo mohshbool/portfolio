@@ -73,6 +73,7 @@ html {
 .header-icon {
   height: 150px;
   width: 150px;
+  color: var(--secondary-color);
 }
 
 header {
@@ -167,7 +168,7 @@ header {
   border-top: 5px solid #696969;
   border-radius: 0 0 5px 5px;
   background-color: #696969;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .skills-tile {
@@ -194,12 +195,12 @@ header h1 {
 }
 
 .slider-image {
-  border: 5px solid #d7caaa;
+  border: 5px solid var(--primary-color);
   cursor: pointer;
 }
 
 .slider-tab {
-  background-color: #d7caaa;
+  background-color: var(--primary-color);
   height: 25px;
 }
 
@@ -319,6 +320,9 @@ header h1 {
 
 .modal-description {
   font-weight: 500;
+  color: var(--primary-color);
+
+  color: var(--primary-color);
 }
 
 .link-href {
@@ -407,7 +411,10 @@ header h1 {
 }
 
 .modal-inside .modal-content {
-  background: white;
+  background: var(--secondary-color);
+  .skills-icon {
+    color: var(--primary-color);
+  }
 }
 
 .bars {
@@ -462,7 +469,7 @@ header h1 {
 }
 
 .close-icon {
-  color: black;
+  color: var(--primary-color);
   font-weight: lighter !important;
 
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
@@ -480,16 +487,14 @@ header h1 {
   font-size: 12px;
 }
 
-.awssld__next {
-  outline: none !important;
-}
-
+.awssld__next,
 .awssld__prev {
+  color: var(--primary-color) !important;
   outline: none !important;
 }
 
 .loader-bar-color {
-  color: black !important;
+  color: var(--primary-color) !important;
 }
 
 #portfolio {

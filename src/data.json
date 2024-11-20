@@ -93,10 +93,6 @@
       "images": ["p1.png", "p2.png"],
       "technologies": [
         {
-          "class": "devicon-osi-plain",
-          "name": "Open Source"
-        },
-        {
           "class": "devicon-react-plain",
           "name": "React"
         },

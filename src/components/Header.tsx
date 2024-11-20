@@ -101,7 +101,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
           playsInline
         >
           <source
-            src={`/videos/bg${isPortrait ? `_vertical` : Math.floor(Math.random() * 3)}.mp4`}
+            src={`/videos/bg_${isPortrait ? `vertical` : isDarkTheme ? 'dark' : 'light'}.mp4`}
             type="video/mp4"
           />
         </video>

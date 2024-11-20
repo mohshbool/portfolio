@@ -27,6 +27,7 @@ const ProjectDetailsModal: React.FC<ProjectDetailsModalProps> = ({
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      onBackdropClick={onHide}
       className="modal-inside"
     >
       <span onClick={onHide} className="modal-close">
@@ -87,7 +88,7 @@ const ProjectDetailsModal: React.FC<ProjectDetailsModalProps> = ({
                   <span>
                     <div className="text-center">
                       <i
-                        className={technology.class}
+                        className={`${technology.class} skills-icon`}
                         style={{ fontSize: '300%' }}
                       >
                         <p
