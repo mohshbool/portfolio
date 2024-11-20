@@ -16,10 +16,8 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => {
     <section id="resume" className="pb-5">
       <div className="col-md-12 mx-auto">
         <div className="col-md-12">
-          <h1 className="section-title" style={{ color: 'black' }}>
-            <span className="text-black" style={{ textAlign: 'center' }}>
-              Experience
-            </span>
+          <h1 className="section-title">
+            <span style={{ textAlign: 'center' }}>Experience</span>
           </h1>
         </div>
       </div>
@@ -30,8 +28,8 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => {
               className="vertical-timeline-element--work"
               date={experience.years}
               iconStyle={{
-                background: '#AE944F',
-                color: '#fff',
+                background: 'var(--primary-color)',
+                color: 'var(--secondary-color)',
                 textAlign: 'center',
               }}
               icon={
@@ -70,7 +68,7 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => {
           ))}
           <VerticalTimelineElement
             iconStyle={{
-              background: '#AE944F',
+              background: 'var(--primary-color)',
               color: '#fff',
               textAlign: 'center',
             }}
