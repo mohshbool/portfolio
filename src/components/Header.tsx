@@ -26,6 +26,25 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
   }, []);
 
   useEffect(() => {
+    const handleClick = function (e: Event) {
+      e.preventDefault();
+      window.scrollBy({
+        top: window.innerHeight,
+        left: 0,
+        behavior: 'smooth',
+      });
+    };
+
+    document
+      .getElementById('sroll-down-container')
+      ?.addEventListener('click', handleClick);
+    return () =>
+      document
+        .getElementById('sroll-down-container')
+        ?.removeEventListener('click', handleClick);
+  }, []);
+
+  useEffect(() => {
     const handleResize = () => {
       setIsPortrait(window.innerHeight > window.innerWidth);
     };
@@ -166,14 +185,16 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
           </div>
         </div>
       </div>
-      <div
-        className="scrolldown-arrow"
-        style={{ bottom: '25px', display: isAtTop ? 'block' : 'none' }}
-      />
-      <div
-        className="scrolldown-arrow"
-        style={{ bottom: '40px', display: isAtTop ? 'block' : 'none' }}
-      />
+      <div id="sroll-down-container">
+        <div
+          className="scrolldown-arrow"
+          style={{ bottom: '25px', display: isAtTop ? 'block' : 'none' }}
+        />
+        <div
+          className="scrolldown-arrow"
+          style={{ bottom: '40px', display: isAtTop ? 'block' : 'none' }}
+        />
+      </div>
     </header>
   );
 };
