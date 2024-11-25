@@ -25,6 +25,10 @@ html {
   padding: 0;
 }
 
+body {
+  cursor: url('/cursor.png'), auto;
+}
+
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
 }
@@ -129,7 +133,12 @@ header {
   }
 }
 
+#srolldown-container {
+  cursor: pointer;
+}
+
 .scrolldown-arrow {
+  cursor: pointer;
   width: 2em;
   height: 2em;
   background-color: transparent;

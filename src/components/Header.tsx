@@ -36,11 +36,11 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
     };
 
     document
-      .getElementById('sroll-down-container')
+      .getElementById('srolldown-container')
       ?.addEventListener('click', handleClick);
     return () =>
       document
-        .getElementById('sroll-down-container')
+        .getElementById('srolldown-container')
         ?.removeEventListener('click', handleClick);
   }, []);
 
@@ -185,7 +185,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
           </div>
         </div>
       </div>
-      <div id="sroll-down-container">
+      <div id="srolldown-container">
         <div
           className="scrolldown-arrow"
           style={{ bottom: '25px', display: isAtTop ? 'block' : 'none' }}
