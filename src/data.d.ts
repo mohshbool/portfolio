@@ -3,6 +3,12 @@ export interface Header {
   titles: string[];
 }
 
+export interface About {
+  title: string;
+  description: string[];
+  image: string;
+}
+
 export interface Technology {
   name: string;
   class: string;

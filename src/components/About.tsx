@@ -3,12 +3,7 @@ import { Icon } from '@iconify/react';
 import reactIcon from '@iconify/icons-logos/react';
 import appleIcon from '@iconify/icons-logos/linux-tux';
 import nestIcon from '@iconify/icons-logos/nodejs-icon-alt';
-
-interface AboutData {
-  title: string;
-  description: string;
-  image: string;
-}
+import { About as AboutData } from '../data.d';
 
 interface AboutProps {
   data: AboutData;
@@ -82,7 +77,12 @@ const About: React.FC<AboutProps> = ({ data }) => {
                   <span className="wave">{data.title} :) </span>
                   <br />
                   <br />
-                  {data.description}
+                  {data.description.map(text => (
+                    <>
+                      {text}
+                      <br />
+                    </>
+                  ))}
                 </div>
               </div>
             </div>

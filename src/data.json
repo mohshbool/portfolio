@@ -6,7 +6,16 @@
   "about": {
     "image": "mohammad.shbool.jpeg",
     "title": "Hello World!",
-    "description": "I am a software engineer with over 6 years of experience in development. I have worked on various projects and have a good understanding of the latest technologies. I am passionate about creating beautiful and user-friendly interfaces."
+    "description": [
+      "A seasoned software engineer with 6+ years of experience in full-stack development and mobile application development.",
+      "",
+      "=> Skilled in leveraging modern technologies to build robust and user-friendly applications.",
+      "=> Proficient in database technologies and cloud providers. ",
+      "=> Experienced in CI/CD pipelines, containerization, and DevOps practices.",
+      "=> Strong understanding of RESTful APIs, GraphQL, WebSockets, and microservices architecture. ",
+      "=> Passionate about clean code, best practices, and continuous learning.",
+      "=> Adept at collaborating with cross-functional teams, mentoring developers, and leading technical projects."
+    ]
   },
   "projects": [
     {
