@@ -92,6 +92,12 @@ header {
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 0;
+  .title-container {
+    margin-bottom: 20px;
+    @media (max-width: 400px) {
+      margin-bottom: 50px;
+    }
+  }
   h1,
   .header-icon,
   .header-name,
@@ -120,6 +126,10 @@ header {
     left: 10px;
     opacity: 0.65;
     text-transform: lowercase;
+    @media (max-width: 500px) {
+      top: 10px;
+      right: 10px;
+    }
     a,
     i {
       color: var(--grey-color);
@@ -145,7 +155,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.5);
+    filter: brightness(0.8);
   }
 
   .image-overlay {
@@ -155,8 +165,8 @@ header {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); // Adjust opacity as needed
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px); // Safari support
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px); // Safari support
   }
 }
 
@@ -178,6 +188,9 @@ header {
   left: 50%;
   transform: translateY(0%) rotate(45deg);
   opacity: 0;
+  @media (max-width: 500px) {
+    left: 49%;
+  }
 }
 
 @keyframes scrolldown {

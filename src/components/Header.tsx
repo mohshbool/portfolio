@@ -76,7 +76,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsPortrait(window.innerHeight > window.innerWidth);
+      setIsPortrait(window.innerHeight - 50 > window.innerWidth);
     };
 
     window.addEventListener('resize', handleResize);
@@ -237,11 +237,11 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
       <div id="srolldown-container">
         <div
           className="scrolldown-arrow"
-          style={{ bottom: '25px', display: isAtTop ? 'block' : 'none' }}
+          style={{ bottom: '40px', display: isAtTop ? 'block' : 'none' }}
         />
         <div
           className="scrolldown-arrow"
-          style={{ bottom: '40px', display: isAtTop ? 'block' : 'none' }}
+          style={{ bottom: '55px', display: isAtTop ? 'block' : 'none' }}
         />
       </div>
     </header>
