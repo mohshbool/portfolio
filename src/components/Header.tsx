@@ -146,35 +146,6 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
         <img src={`images/background/${backgroundKey}.jpg?v=${Date.now()}`} />
         <div className="image-overlay"></div>
       </div>
-      <div className="credits">
-        Photo by{' '}
-        <a
-          href={unsplashUrlBuilder(
-            BACKGROUND_IMAGES_CREDITS[backgroundKey].profile
-          )}
-        >
-          {BACKGROUND_IMAGES_CREDITS[backgroundKey].name}
-        </a>{' '}
-        on{' '}
-        <a
-          href={unsplashUrlBuilder(
-            BACKGROUND_IMAGES_CREDITS[backgroundKey].url
-          )}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="12"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              xmlns="http://www.w3.org/2000/svg"
-              d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z"
-            />
-          </svg>
-        </a>
-      </div>
       <div className="row aligner" style={{ height: '100%' }}>
         <div className="col-md-12">
           <div>
@@ -233,6 +204,35 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
             />
           </div>
         </div>
+      </div>
+      <div className="credits">
+        Photo by{' '}
+        <a
+          href={unsplashUrlBuilder(
+            BACKGROUND_IMAGES_CREDITS[backgroundKey].profile
+          )}
+        >
+          {BACKGROUND_IMAGES_CREDITS[backgroundKey].name}
+        </a>{' '}
+        on{' '}
+        <a
+          href={unsplashUrlBuilder(
+            BACKGROUND_IMAGES_CREDITS[backgroundKey].url
+          )}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z"
+            />
+          </svg>
+        </a>
       </div>
       <div id="srolldown-container">
         <div

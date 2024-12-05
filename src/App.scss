@@ -101,6 +101,9 @@ header {
     position: relative;
     z-index: 2;
   }
+  .react-switch {
+    margin-top: 30px;
+  }
   .react-switch-handle {
     background-color: color-mix(
       in srgb,
