@@ -98,15 +98,23 @@ header {
   padding-bottom: 0;
   h1,
   .header-icon,
+  .header-name,
   .title-container,
   .react-switch {
-    color: white;
+    color: var(--secondary-color);
     position: relative;
     z-index: 2;
   }
+  .react-switch-handle {
+    background-color: color-mix(
+      in srgb,
+      var(--secondary-color) 70%,
+      transparent
+    ) !important;
+  }
 }
 
-.video-background {
+.image-background {
   position: absolute;
   top: 0;
   left: 0;
@@ -115,13 +123,14 @@ header {
   z-index: 1;
   background-color: var(--primary-color);
 
-  video {
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(0.5);
   }
 
-  .video-overlay {
+  .image-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -300,7 +309,7 @@ header h1 {
 }
 
 .polaroid span {
-  background: var(--primary-color-darker);
+  background: var(--secondary-color);
   display: inline-block;
   margin: 55px 75px 30px;
   padding: 15px 15px 30px;
@@ -314,6 +323,11 @@ header h1 {
   transition: all 0.2s linear;
   z-index: 0;
   position: relative;
+}
+
+.card-body {
+  background-color: var(--secondary-color);
+  color: var(--primary-color-darker);
 }
 
 .project-container {

@@ -3,13 +3,20 @@ import Typical from 'react-typical';
 import Switch from 'react-switch';
 import { Header as DATA } from '../data';
 import './Header.css';
+
+/*
+ Photo by <a href="https://unsplash.com/@raymondpetrik?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Raymond Petrik</a> on <a href="https://unsplash.com/photos/an-origami-christmas-tree-sitting-on-top-of-a-couch-fgITLkxk_QQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      wadi rum Photo by <a href="https://unsplash.com/@yuli_superson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Juli Kosolapova</a> on <a href="https://unsplash.com/photos/mountains-under-white-clouds-at-daytime-pZ-XFIrJMtE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+     sunset Photo by <a href="https://unsplash.com/@he_junhui?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">He Junhui</a> on <a href="https://unsplash.com/photos/a-blurry-photo-of-a-city-skyline-at-sunset-FNFBN4-GdlQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+       
+*/
+
 interface HeaderProps {
   data: DATA;
 }
 
 const Header: React.FC<HeaderProps> = ({ data }) => {
   const switchRef = useRef<Switch>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
   const [isPortrait, setIsPortrait] = useState<boolean>(
     window.innerHeight > window.innerWidth
@@ -48,10 +55,6 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
     const handleResize = () => {
       setIsPortrait(window.innerHeight > window.innerWidth);
     };
-
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5;
-    }
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -110,21 +113,11 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
 
   return (
     <header id="home" style={{ height: window.innerHeight, display: 'block' }}>
-      <div className="video-background">
-        <video
-          ref={videoRef}
-          key={isPortrait ? 'portrait' : 'landscape'}
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source
-            src={`/videos/bg_${isPortrait ? `vertical` : isDarkTheme ? 'dark' : 'light'}.mp4`}
-            type="video/mp4"
-          />
-        </video>
-        <div className="video-overlay"></div>
+      <div className="image-background">
+        <img
+          src={`images/background/${isPortrait ? `portrait` : `landscape`}_${isDarkTheme ? 'dark' : 'light'}.jpg?v=${Date.now()}`}
+        />
+        <div className="image-overlay"></div>
       </div>
       <div className="row aligner" style={{ height: '100%' }}>
         <div className="col-md-12">
@@ -135,7 +128,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
               data-inline="false"
             ></span>
             <br />
-            <h1 className="mb-0">
+            <h1 className="mb-0 header-name">
               <Typical steps={[data.name]} wrapper="p" />
             </h1>
             <div className="title-container">

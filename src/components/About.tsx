@@ -69,8 +69,6 @@ const About: React.FC<AboutProps> = ({ data }) => {
                     height: 'auto',
                     fontSize: '145%',
                     lineHeight: '200%',
-                    backgroundColor: 'var(--primary-color-darker)',
-                    color: 'var(--secondary-color)',
                   }}
                 >
                   <br />
