@@ -5,11 +5,34 @@ import { Header as DATA } from '../data';
 import './Header.css';
 
 /*
- Photo by <a href="https://unsplash.com/@raymondpetrik?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Raymond Petrik</a> on <a href="https://unsplash.com/photos/an-origami-christmas-tree-sitting-on-top-of-a-couch-fgITLkxk_QQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      wadi rum Photo by <a href="https://unsplash.com/@yuli_superson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Juli Kosolapova</a> on <a href="https://unsplash.com/photos/mountains-under-white-clouds-at-daytime-pZ-XFIrJMtE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-     sunset Photo by <a href="https://unsplash.com/@he_junhui?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">He Junhui</a> on <a href="https://unsplash.com/photos/a-blurry-photo-of-a-city-skyline-at-sunset-FNFBN4-GdlQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+ Photo by <a href="https://unsplash.com/@raymondpetrik">Raymond Petrik</a> on <a href="https://unsplash.com/photos/an-origami-christmas-tree-sitting-on-top-of-a-couch-fgITLkxk_QQ">Unsplash</a>
+      wadi rum Photo by <a href="https://unsplash.com/@yuli_superson">Juli Kosolapova</a> on <a href="https://unsplash.com/photos/mountains-under-white-clouds-at-daytime-pZ-XFIrJMtE">Unsplash</a>
+     sunset Photo by <a href="https://unsplash.com/@he_junhui">He Junhui</a> on <a href="https://unsplash.com/photos/a-blurry-photo-of-a-city-skyline-at-sunset-FNFBN4-GdlQ">Unsplash</a>
        
 */
+
+const BACKGROUND_IMAGES_CREDITS = {
+  portrait_light: {
+    url: 'photos/an-origami-christmas-tree-sitting-on-top-of-a-couch-fgITLkxk_QQ',
+    profile: '@raymondpetrik',
+    name: 'Raymond Petrik',
+  },
+  landscape_light: {
+    url: 'photos/mountains-under-white-clouds-at-daytime-pZ-XFIrJMtE',
+    profile: '@yuli_superson',
+    name: 'Juli Kosolapova',
+  },
+  portrait_dark: {
+    url: 'https://unsplash.com/photos/the-night-sky-over-a-rocky-mountain-range-ADvoB9pDkow',
+    profile: '@ryankim246',
+    name: 'Ryan Kim',
+  },
+  landscape_dark: {
+    url: 'photos/a-blurry-photo-of-a-city-skyline-at-sunset-FNFBN4-GdlQ',
+    profile: '@he_junhui',
+    name: 'He Junhui',
+  },
+};
 
 interface HeaderProps {
   data: DATA;
@@ -111,13 +134,46 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
     () => true
   );
 
+  const backgroundKey =
+    `${isPortrait ? `portrait` : `landscape`}_${isDarkTheme ? 'dark' : 'light'}` as keyof typeof BACKGROUND_IMAGES_CREDITS;
+
+  const unsplashUrlBuilder = (path: string) =>
+    `https://unsplash.com/${path}&utm_medium=referral&utm_source=shbool.net`;
+
   return (
     <header id="home" style={{ height: window.innerHeight, display: 'block' }}>
       <div className="image-background">
-        <img
-          src={`images/background/${isPortrait ? `portrait` : `landscape`}_${isDarkTheme ? 'dark' : 'light'}.jpg?v=${Date.now()}`}
-        />
+        <img src={`images/background/${backgroundKey}.jpg?v=${Date.now()}`} />
         <div className="image-overlay"></div>
+      </div>
+      <div className="credits">
+        Photo by{' '}
+        <a
+          href={unsplashUrlBuilder(
+            BACKGROUND_IMAGES_CREDITS[backgroundKey].profile
+          )}
+        >
+          {BACKGROUND_IMAGES_CREDITS[backgroundKey].name}
+        </a>{' '}
+        on{' '}
+        <a
+          href={unsplashUrlBuilder(
+            BACKGROUND_IMAGES_CREDITS[backgroundKey].url
+          )}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z"
+            />
+          </svg>
+        </a>
       </div>
       <div className="row aligner" style={{ height: '100%' }}>
         <div className="col-md-12">

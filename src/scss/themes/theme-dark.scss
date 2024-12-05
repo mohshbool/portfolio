@@ -1,6 +1,14 @@
 body[data-theme='dark'] {
   @import '../dark-slider.scss';
 
+  .github-corner svg {
+    .octo-body,
+    .octo-arm {
+      color: #92979a;
+    }
+    color: #151513;
+  }
+
   .image-background {
     // position: absolute;
     // top: 0;
@@ -36,7 +44,7 @@ body[data-theme='dark'] {
     .header-icon,
     .header-name,
     .title-styles {
-      color: #898d90;
+      color: var(--grey-color);
     }
 
     .react-switch-handle {
@@ -44,7 +52,7 @@ body[data-theme='dark'] {
     }
 
     .scrolldown-arrow {
-      border-color: #898d90;
+      border-color: var(--grey-color);
     }
   }
 
@@ -65,14 +73,14 @@ body[data-theme='dark'] {
     //     background-color: var(--primary-color-darker);
     .polaroid span {
       background-color: var(--primary-color-darker);
-      border: 1px solid #898d90;
+      border: 1px solid var(--grey-color);
     }
     // .card {
     //   background: var(--secondary-color);
     // }
     .card-header {
       background-color: var(--primary-color);
-      border: 1px solid #898d90 !important;
+      border: 1px solid var(--grey-color) !important;
     }
     .card-body {
       background-color: var(--primary-color-darker);

@@ -16,6 +16,7 @@
   --primary-color: #233d4d;
   --secondary-color: #edf2ef;
   --primary-color-darker: #13212a;
+  --grey-color: #898d90;
 }
 
 html {
@@ -54,11 +55,6 @@ body {
     animation: octocat-wave 560ms ease-in-out;
   }
 }
-[data-theme='dark'] .github-corner svg {
-  fill: #fff;
-  color: #151513;
-}
-
 .aligner {
   display: flex;
   align-items: center;
@@ -111,6 +107,25 @@ header {
       var(--secondary-color) 70%,
       transparent
     ) !important;
+  }
+  .credits {
+    position: absolute;
+    z-index: 2;
+    font-size: 12px;
+    color: var(--grey-color);
+    bottom: 10px;
+    left: 10px;
+    opacity: 0.65;
+    text-transform: lowercase;
+    a,
+    i {
+      color: var(--grey-color);
+      svg {
+        margin-left: 2px;
+        margin-bottom: 2px;
+        opacity: 0.9;
+      }
+    }
   }
 }
 
