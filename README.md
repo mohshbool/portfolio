@@ -25,15 +25,27 @@ Modern portfolio template rebuilt with TypeScript and updated dependencies 🚀
 
 ## 📦 Quick Start
 
+### Make your own
+
+Edit `src/data.json` and `public/images` for your data
+
+### Install and run
+
 ```bash
 # Install dependencies
 npm install
 
 # Start dev server
 npm start
+```
 
-# Build for production
-npm run build
+### Deploy
+
+Edit `vercel.json` and download [Vercel CLI](https://vercel.com/docs/cli) to match your account's then
+
+```bash
+vercel
+vercel --prod # to deploy directly to production
 ```
 
 ## 🤝 Contributing
