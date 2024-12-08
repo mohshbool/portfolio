@@ -4,7 +4,7 @@ body[data-theme='dark'] {
   .github-corner svg {
     .octo-body,
     .octo-arm {
-      color: #92979a;
+      color: var(--grey-color);
     }
     color: #151513;
   }
@@ -48,7 +48,7 @@ body[data-theme='dark'] {
     }
 
     .react-switch-handle {
-      background-color: #92979a !important;
+      background-color: #d2d2d2 !important;
     }
 
     .scrolldown-arrow {
