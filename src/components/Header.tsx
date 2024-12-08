@@ -138,7 +138,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
     `${isPortrait ? `portrait` : `landscape`}_${isDarkTheme ? 'dark' : 'light'}` as keyof typeof BACKGROUND_IMAGES_CREDITS;
 
   const unsplashUrlBuilder = (path: string) =>
-    `https://unsplash.com/${path}&utm_medium=referral&utm_source=shbool.net`;
+    `https://unsplash.com/${path}?utm_medium=referral&utm_source=shbool.net`;
 
   return (
     <header id="home" style={{ height: window.innerHeight, display: 'block' }}>
