@@ -1,6 +1,8 @@
 @import '../src/scss/themes/theme-dark.scss';
 @import '../src/scss/themes/theme-light.scss';
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+
+@import url('https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/source-code-pro.min.css');
+@import url('https://fonts.cdnfonts.com/css/ua-squared');
 
 @font-face {
   font-family: 'NEXT ART';
@@ -66,7 +68,7 @@ body {
 }
 
 .title-styles {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Source Code Pro', sans-serif;
   font-size: 250%;
 }
 
@@ -97,6 +99,11 @@ header {
     @media (max-width: 400px) {
       margin-bottom: 50px;
     }
+  }
+  .header-name {
+    font-family: 'UA Squared', sans-serif;
+    letter-spacing: 2px;
+    font-size: 500%;
   }
   h1,
   .header-icon,
