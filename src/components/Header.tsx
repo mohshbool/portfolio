@@ -142,6 +142,9 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
 
   return (
     <header id="home" style={{ height: window.innerHeight, display: 'block' }}>
+      <div className="construction-banner">
+        🚧 Website Under Construction 🚧
+      </div>
       <div className="image-background">
         <img src={`images/background/${backgroundKey}.jpg?v=${Date.now()}`} />
         <div className="image-overlay"></div>
