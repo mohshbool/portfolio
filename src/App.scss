@@ -485,6 +485,11 @@ header h1 {
   color: var(--primary-color) !important;
 }
 
+.vertical-timeline-element-icon,
+.vertical-timeline-element-subtitle {
+  cursor: pointer;
+}
+
 .vertical-timeline-element-title,
 .vertical-timeline-element-subtitle {
   color: var(--primary-color) !important;

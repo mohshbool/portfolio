@@ -39,6 +39,7 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => {
                 ></i>
               }
               key={i}
+              iconOnClick={() => window.open(experience.companyUrl, '_blank')}
             >
               <h3
                 className="vertical-timeline-element-title"
@@ -49,6 +50,7 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => {
               <h4
                 className="vertical-timeline-element-subtitle"
                 style={{ textAlign: 'left' }}
+                onClick={() => window.open(experience.companyUrl, '_blank')}
               >
                 {experience.company}
               </h4>
