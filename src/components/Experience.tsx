@@ -33,10 +33,11 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => {
                 textAlign: 'center',
               }}
               icon={
-                <i
-                  className={`fab ${experience.icon} experience-icon`}
-                  aria-placeholder={experience.mainTechnology}
-                ></i>
+                <img
+                  src={`images/experience/${experience.slug}.png`}
+                  aria-placeholder={experience.company}
+                  className="experience-logo"
+                />
               }
               key={i}
               iconOnClick={() => window.open(experience.companyUrl, '_blank')}

@@ -30,7 +30,7 @@ export interface Experience {
   title: string;
   years: string;
   mainTechnology: string;
-  icon: string;
+  slug: string;
   technologies: string[];
 }
 

@@ -495,12 +495,11 @@ header h1 {
   color: var(--primary-color) !important;
 }
 
-@media only screen and (max-width: 1170px) {
-  .experience-icon {
-    font-size: 170%;
-    margin-top: 27%;
-    text-align: center;
-  }
+.experience-logo {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+  padding-top: 7px;
 }
 
 .modal-inside .modal-content {
