@@ -1,13 +1,13 @@
 {
   "header": {
     "name": "Mohammad Shbool",
-    "titles": ["Full Stack Software Engineer", "Mobile Application Developer"]
+    "titles": ["Senior Software Engineer", "Senior Mobile Engineer"]
   },
   "about": {
     "image": "mohammad.shbool.jpeg",
     "title": "Hello World!",
     "description": [
-      "A seasoned software engineer with 6+ years of experience in full-stack development and mobile application development.",
+      "A seasoned software engineer with over six years of experience in full-stack development and mobile application development.",
       "",
       "=> Skilled in leveraging modern technologies to build robust and user-friendly applications.",
       "=> Proficient in database technologies and cloud providers. ",
@@ -195,12 +195,26 @@
   ],
   "experience": [
     {
+      "company": "Jordan Open Source Association",
+      "companyUrl": "https://josa.ngo",
+      "title": "Project Manager",
+      "years": "11.2024 - Present",
+      "mainTechnology": "Project Management",
+      "slug": "josa",
+      "technologies": [
+        "Project Management",
+        "Public Speaking",
+        "Community Development",
+        "Event Organization"
+      ]
+    },
+    {
       "company": "Reach World",
       "companyUrl": "https://reachworld.com",
-      "title": "Mobile Application Developer",
+      "title": "Lead Mobile Engineer",
       "years": "09.2023 - present",
       "mainTechnology": "React Native",
-      "icon": "fa-react",
+      "slug": "reach-world",
       "technologies": [
         "React Native",
         "TypeScript",
@@ -217,7 +231,7 @@
       "title": "Community Officer",
       "years": "03.2022 - 08.2023",
       "mainTechnology": "Open Source",
-      "icon": "fa-osi",
+      "slug": "josa",
       "technologies": [
         "Project Management",
         "Public Speaking",
@@ -229,12 +243,11 @@
     {
       "company": "We.The.Makers",
       "companyUrl": "https://wethemakers.dev",
-      "title": "Technical Team Lead",
+      "title": "Senior Software Engineer",
       "years": "09.2021 - 04.2022",
       "mainTechnology": "React Native",
-      "icon": "fa-react",
+      "slug": "wethemakers",
       "technologies": [
-        "Project Management",
         "Technical Leadership",
         "Team Management",
         "JIRA",
@@ -247,10 +260,10 @@
     {
       "company": "We.The.Makers",
       "companyUrl": "https://wethemakers.dev",
-      "title": "Mobile Application Developer",
+      "title": "Full Stack Software Engineer",
       "years": "09.2020 - 08.2021",
       "mainTechnology": "React Native",
-      "icon": "fa-react",
+      "slug": "wethemakers",
       "technologies": [
         "React Native",
         "TypeScript",
@@ -268,7 +281,7 @@
       "title": "Internet of Things Engineer",
       "years": "11.2020 - 04.2021",
       "mainTechnology": "Internet of Things",
-      "icon": "fa-raspberry-pi",
+      "slug": "ivvest",
       "technologies": [
         "Arduino",
         "Raspberry Pi",
@@ -282,7 +295,7 @@
       "title": "Full Stack Software Engineer",
       "years": "01.2019 - 05.2020",
       "mainTechnology": "NestJS",
-      "icon": "fa-node-js",
+      "slug": "wethemakers",
       "technologies": [
         "TypeScript",
         "NestJS",
@@ -297,10 +310,10 @@
     {
       "company": "cg imagine+invent",
       "companyUrl": "https://cgiandi.com",
-      "title": "Full Stack Software Engineer",
+      "title": "Junrio Full Stack Engineer",
       "years": "01.2018 - 12.2018",
       "mainTechnology": "React Native",
-      "icon": "fa-react",
+      "slug": "cgiandi",
       "technologies": [
         "TypeScript",
         "React Hooks",
