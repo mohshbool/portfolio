@@ -19,6 +19,48 @@
   },
   "projects": [
     {
+      "title": "Kaleela App",
+      "description": "Kaleela is the ultimate Arabic learning app, designed to immerse non-native speakers in the heart of the Arabic language. We focus on five key language skills: Writing, Listening, Speaking, Reading, and Culture.",
+      "startDate": "2024",
+      "slug": "kaleela",
+      "images": ["p1.png", "p2.png"],
+      "technologies": [
+        {
+          "class": "devicon-react-plain",
+          "name": "React Native"
+        },
+        {
+          "class": "devicon-apple-plain",
+          "name": "iOS"
+        },
+        {
+          "class": "devicon-android-plain",
+          "name": "Android"
+        },
+        {
+          "class": "devicon-firebase-plain",
+          "name": "Firebase"
+        },
+        {
+          "class": "devicon-redux-plain",
+          "name": "Redux"
+        },
+        {
+          "class": "devicon-axios-plain",
+          "name": "Axios"
+        },
+        {
+          "class": "devicon-jira-plain",
+          "name": "JIRA"
+        },
+        {
+          "class": "devicon-bun-plain",
+          "name": "Bun"
+        }
+      ],
+      "url": "https://kaleela.com/"
+    },
+    {
       "title": "Mattal (مَطَل)",
       "description": "Mattal is an open-source passion project that was created in the height of the COVID-19 pandemic, which I had then. It is a platform that allows users to explore the different cool view spots in Jordan, since everything was closed in the pandemic.",
       "startDate": "2021",
