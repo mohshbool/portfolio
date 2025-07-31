@@ -27,7 +27,7 @@ Modern portfolio template rebuilt with TypeScript and updated dependencies 🚀
 
 ### Make your own
 
-Edit `src/data.json` and `public/images` for your data
+Edit `src/data/en.json`, `src/data/de.json` and `public/images` for your data
 
 ### Install and run
 
