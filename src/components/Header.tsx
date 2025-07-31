@@ -1,15 +1,8 @@
 import React, { memo, useCallback, useEffect, useRef, useState } from 'react';
 import Typical from 'react-typical';
 import Switch from 'react-switch';
-import { Header as DATA } from '../data';
+import { Header as DATA } from '../data/data';
 import './Header.css';
-
-/*
- Photo by <a href="https://unsplash.com/@raymondpetrik">Raymond Petrik</a> on <a href="https://unsplash.com/photos/an-origami-christmas-tree-sitting-on-top-of-a-couch-fgITLkxk_QQ">Unsplash</a>
-      wadi rum Photo by <a href="https://unsplash.com/@yuli_superson">Juli Kosolapova</a> on <a href="https://unsplash.com/photos/mountains-under-white-clouds-at-daytime-pZ-XFIrJMtE">Unsplash</a>
-     sunset Photo by <a href="https://unsplash.com/@he_junhui">He Junhui</a> on <a href="https://unsplash.com/photos/a-blurry-photo-of-a-city-skyline-at-sunset-FNFBN4-GdlQ">Unsplash</a>
-       
-*/
 
 const BACKGROUND_IMAGES_CREDITS = {
   portrait_light: {
@@ -23,7 +16,7 @@ const BACKGROUND_IMAGES_CREDITS = {
     name: 'Juli Kosolapova',
   },
   portrait_dark: {
-    url: 'https://unsplash.com/photos/the-night-sky-over-a-rocky-mountain-range-ADvoB9pDkow',
+    url: 'photos/the-night-sky-over-a-rocky-mountain-range-ADvoB9pDkow',
     profile: '@ryankim246',
     name: 'Ryan Kim',
   },
@@ -36,9 +29,19 @@ const BACKGROUND_IMAGES_CREDITS = {
 
 interface HeaderProps {
   data: DATA;
+  language: string;
+  setLanguage: (payload: string) => void;
+  photoBy: string;
+  on: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ data }) => {
+const Header: React.FC<HeaderProps> = ({
+  data,
+  language,
+  setLanguage,
+  photoBy,
+  on,
+}) => {
   const switchRef = useRef<Switch>(null);
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
   const [isPortrait, setIsPortrait] = useState<boolean>(
@@ -142,9 +145,6 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
 
   return (
     <header id="home" style={{ height: window.innerHeight, display: 'block' }}>
-      <div className="construction-banner">
-        🚧 Website Under Construction 🚧
-      </div>
       <div className="image-background">
         <img src={`images/background/${backgroundKey}.jpg?v=${Date.now()}`} />
         <div className="image-overlay"></div>
@@ -205,11 +205,26 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
               }
               id="icon-switch"
             />
+            <div className="language-switch-container">
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  '/images/header/united-kingdom-flag.png'
+                }
+                className={language === 'en' ? 'selected' : ''}
+                onClick={() => setLanguage('en')}
+              />
+              <img
+                src={process.env.PUBLIC_URL + '/images/header/germany-flag.png'}
+                className={language === 'de' ? 'selected' : ''}
+                onClick={() => setLanguage('de')}
+              />
+            </div>
           </div>
         </div>
       </div>
       <div className="credits">
-        Photo by{' '}
+        {photoBy}{' '}
         <a
           href={unsplashUrlBuilder(
             BACKGROUND_IMAGES_CREDITS[backgroundKey].profile
@@ -217,7 +232,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
         >
           {BACKGROUND_IMAGES_CREDITS[backgroundKey].name}
         </a>{' '}
-        on{' '}
+        {on}{' '}
         <a
           href={unsplashUrlBuilder(
             BACKGROUND_IMAGES_CREDITS[backgroundKey].url
@@ -240,11 +255,17 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
       <div id="srolldown-container">
         <div
           className="scrolldown-arrow"
-          style={{ bottom: '40px', display: isAtTop ? 'block' : 'none' }}
+          style={{
+            bottom: window.innerWidth > 500 ? '40px' : '30px',
+            display: isAtTop ? 'block' : 'none',
+          }}
         />
         <div
           className="scrolldown-arrow"
-          style={{ bottom: '55px', display: isAtTop ? 'block' : 'none' }}
+          style={{
+            bottom: window.innerWidth > 500 ? '55px' : '40px',
+            display: isAtTop ? 'block' : 'none',
+          }}
         />
       </div>
     </header>

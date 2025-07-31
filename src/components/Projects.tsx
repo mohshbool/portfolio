@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import ProjectDetailsModal from './ProjectDetailsModal';
-import { Project } from 'data.d';
+import { Project } from 'data/data';
 
 interface ProjectsProps {
   data: Project[];
+  title: string;
 }
 
 interface ModalState {
@@ -11,7 +12,7 @@ interface ModalState {
   project: Project | null;
 }
 
-const Projects: React.FC<ProjectsProps> = ({ data }) => {
+const Projects: React.FC<ProjectsProps> = ({ data, title }) => {
   const [modalState, setModalState] = useState<ModalState>({
     show: false,
     project: null,
@@ -35,7 +36,7 @@ const Projects: React.FC<ProjectsProps> = ({ data }) => {
     <section id="portfolio">
       <div className="col-md-12">
         <h1 className="section-title">
-          <span>Projects (WIP)</span>
+          <span>{title}</span>
         </h1>
         <div className="col-md-12 mx-auto">
           <div className="row mx-auto">

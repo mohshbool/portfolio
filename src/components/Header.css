@@ -1,9 +1,3 @@
-/* ...existing code... */
-
-.switch-icon .iconify {
-  /* ...existing styles... */
-}
-
 @media (max-width: 768px) {
   .react-switch {
     margin-top: 35px !important;

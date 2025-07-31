@@ -1,0 +1,401 @@
+{
+  "language": "de",
+  "header": {
+    "name": "Mohammad Shbool",
+    "titles": ["Senior Software-Ingenieur", "Senior Mobile-Ingenieur"]
+  },
+  "about": {
+    "image": "mohammad.shbool.jpeg",
+    "title": "Hallo Welt!",
+    "description": [
+      "Ein erfahrener Software-Ingenieur mit über sechs Jahren Erfahrung in der Full-Stack-Entwicklung und der Entwicklung von mobilen Anwendungen.",
+      "",
+      "=> Versiert im Einsatz moderner Technologien zum Aufbau robuster und benutzerfreundlicher Anwendungen.",
+      "=> Kompetent in Datenbanktechnologien und Cloud-Anbietern.",
+      "=> Erfahren in CI/CD-Pipelines, Containerisierung und DevOps-Praktiken.",
+      "=> Starkes Verständnis von RESTful APIs, GraphQL, WebSockets und Microservices-Architektur.",
+      "=> Leidenschaftlich für sauberen Code, bewährte Praktiken und kontinuierliches Lernen.",
+      "=> Geschickt in der Zusammenarbeit mit funktionsübergreifenden Teams, der Betreuung von Entwicklern und der Leitung technischer Projekte."
+    ]
+  },
+  "projects": [
+    {
+      "title": "Kaleela App",
+      "description": "Kaleela ist die ultimative arabische Lern-App, die darauf ausgelegt ist, Nicht-Muttersprachler in das Herz der arabischen Sprache einzutauchen. Wir konzentrieren uns auf fünf Schlüssel-Sprachfertigkeiten: Schreiben, Hören, Sprechen, Lesen und Kultur.",
+      "startDate": "2024",
+      "slug": "kaleela",
+      "images": ["p1.png", "p2.png"],
+      "technologies": [
+        {
+          "class": "devicon-react-plain",
+          "name": "React Native"
+        },
+        {
+          "class": "devicon-apple-plain",
+          "name": "iOS"
+        },
+        {
+          "class": "devicon-android-plain",
+          "name": "Android"
+        },
+        {
+          "class": "devicon-firebase-plain",
+          "name": "Firebase"
+        },
+        {
+          "class": "devicon-redux-plain",
+          "name": "Redux"
+        },
+        {
+          "class": "devicon-axios-plain",
+          "name": "Axios"
+        },
+        {
+          "class": "devicon-jira-plain",
+          "name": "JIRA"
+        },
+        {
+          "class": "devicon-bun-plain",
+          "name": "Bun"
+        }
+      ],
+      "url": "https://kaleela.com/"
+    },
+    {
+      "title": "Mattal (مَطَل)",
+      "description": "Mattal ist ein Open-Source-Leidenschaftsprojekt, das auf dem Höhepunkt der COVID-19-Pandemie erstellt wurde, die ich damals hatte. Es ist eine Plattform, die es Benutzern ermöglicht, die verschiedenen coolen Aussichtspunkte in Jordanien zu erkunden, da während der Pandemie alles geschlossen war.",
+      "startDate": "2021",
+      "slug": "mattal",
+      "images": ["p1.png", "p2.png"],
+      "technologies": [
+        {
+          "class": "devicon-osi-plain",
+          "name": "Open Source"
+        },
+        {
+          "class": "devicon-react-plain",
+          "name": "React Native"
+        },
+        {
+          "class": "devicon-firebase-plain",
+          "name": "Firebase"
+        },
+        {
+          "class": "devicon-redux-plain",
+          "name": "Redux"
+        },
+        {
+          "class": "devicon-expressjs-plain",
+          "name": "Express JS"
+        },
+        {
+          "class": "devicon-rxjs-plain",
+          "name": "RxJS"
+        },
+        {
+          "class": "devicon-mongodb-plain",
+          "name": "MongoDB"
+        },
+        {
+          "class": "devicon-amazonwebservices-plain",
+          "name": "AWS"
+        }
+      ],
+      "url": "https://github.com/mohshbool/mattal-app"
+    },
+    {
+      "title": "Safar Points",
+      "description": "Safar Points ist ein kostenloses Belohnungsprogramm, bei dem Mitglieder Reisepunkte durch Einkäufe und Engagement mit Partnern verdienen, die für Flüge, Hotels und Aktivitäten auf der Plattform eingelöst werden können.",
+      "startDate": "2020",
+      "slug": "safar-points",
+      "images": ["p1.png", "p2.png"],
+      "technologies": [
+        {
+          "class": "devicon-react-plain",
+          "name": "React"
+        },
+        {
+          "class": "devicon-nestjs-plain",
+          "name": "NestJS"
+        },
+        {
+          "class": "devicon-graphql-plain",
+          "name": "GraphQL"
+        },
+        {
+          "class": "devicon-redis-plain",
+          "name": "Redis"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "postgresql"
+        },
+        {
+          "class": "devicon-digitalocean-plain",
+          "name": "Digital Ocean"
+        }
+      ],
+      "url": "https://safarpoints.com"
+    },
+    {
+      "title": "Learn Quran",
+      "description": "Learn Quran ist eine hybride Open-Source-Plattform zum Testen Ihres Wissens im Heiligen Koran! Dieses Projekt wurde ursprünglich für Bildungszwecke erstellt.",
+      "startDate": "2019",
+      "slug": "learn-quran",
+      "images": ["p1.png", "p2.png"],
+      "technologies": [
+        {
+          "class": "devicon-react-plain",
+          "name": "React"
+        },
+        {
+          "class": "devicon-firebase-plain",
+          "name": "Firebase"
+        },
+        {
+          "class": "devicon-materialui-plain",
+          "name": "Material UI"
+        },
+        {
+          "class": "devicon-vercel-plain",
+          "name": "Vercel"
+        }
+      ],
+      "url": "https://github.com/learn-quran"
+    },
+    {
+      "title": "Bunni (بُنّي)",
+      "description": "Eine informative formularfähige Website für ein lokales Unternehmen in Jordanien. Ich habe diese Website mit React erstellt.",
+      "startDate": "2019",
+      "slug": "bunni",
+      "images": ["p1.png", "p2.png"],
+      "technologies": [
+        {
+          "class": "devicon-react-plain",
+          "name": "React"
+        },
+        {
+          "class": "devicon-firebase-plain",
+          "name": "Firebase"
+        },
+        {
+          "class": "devicon-materialui-plain",
+          "name": "Material UI"
+        },
+        {
+          "class": "devicon-vercel-plain",
+          "name": "Vercel"
+        }
+      ],
+      "url": "https://bunni.vercel.app"
+    }
+  ],
+  "skills": [
+    {
+      "name": "React",
+      "class": "devicon-react-plain"
+    },
+    {
+      "name": "React Native",
+      "class": "devicon-react-plain"
+    },
+    {
+      "name": "TypeScript",
+      "class": "devicon-typescript-plain"
+    },
+    {
+      "name": "Python",
+      "class": "devicon-python-plain"
+    },
+    {
+      "name": "Node.js",
+      "class": "devicon-nodejs-plain"
+    },
+    {
+      "name": "NestJS",
+      "class": "devicon-nestjs-plain"
+    },
+    {
+      "name": "GraphQL",
+      "class": "devicon-graphql-plain"
+    },
+    {
+      "name": "Docker",
+      "class": "devicon-docker-plain"
+    },
+    {
+      "name": "Kubernetes",
+      "class": "devicon-kubernetes-plain"
+    },
+    {
+      "name": "MongoDB",
+      "class": "devicon-mongodb-plain"
+    },
+    {
+      "name": "MySql",
+      "class": "devicon-mysql-plain"
+    },
+    {
+      "name": "Arduino",
+      "class": "devicon-arduino-plain"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Jordan Open Source Association",
+      "companyUrl": "https://josa.ngo",
+      "title": "Projektmanager",
+      "years": "11.2024 - Gegenwart",
+      "mainTechnology": "Projektmanagement",
+      "slug": "josa",
+      "technologies": [
+        "Projektmanagement",
+        "Öffentliches Sprechen",
+        "Community-Entwicklung",
+        "Veranstaltungsorganisation"
+      ]
+    },
+    {
+      "company": "Reach World",
+      "companyUrl": "https://reachworld.com",
+      "title": "Lead Mobile-Ingenieur",
+      "years": "09.2023 - Gegenwart",
+      "mainTechnology": "React Native",
+      "slug": "reach-world",
+      "technologies": [
+        "React Native",
+        "TypeScript",
+        "REST API",
+        "Analytics",
+        "Deep Linking",
+        "In-App-Käufe",
+        "Technisches Schreiben"
+      ]
+    },
+    {
+      "company": "Jordan Open Source Association",
+      "companyUrl": "https://josa.ngo",
+      "title": "Community-Beauftragter",
+      "years": "03.2022 - 08.2023",
+      "mainTechnology": "Open Source",
+      "slug": "josa",
+      "technologies": [
+        "Projektmanagement",
+        "Öffentliches Sprechen",
+        "Community-Entwicklung",
+        "Veranstaltungsorganisation",
+        "Open Source Management"
+      ]
+    },
+    {
+      "company": "We.The.Makers",
+      "companyUrl": "https://wethemakers.dev",
+      "title": "Senior Software-Ingenieur",
+      "years": "09.2021 - 04.2022",
+      "mainTechnology": "React Native",
+      "slug": "wethemakers",
+      "technologies": [
+        "Technische Führung",
+        "Teammanagement",
+        "JIRA",
+        "Confluence",
+        "Technisches Schreiben",
+        "React Native",
+        "NestJS"
+      ]
+    },
+    {
+      "company": "We.The.Makers",
+      "companyUrl": "https://wethemakers.dev",
+      "title": "Full Stack Software-Ingenieur",
+      "years": "09.2020 - 08.2021",
+      "mainTechnology": "React Native",
+      "slug": "wethemakers",
+      "technologies": [
+        "React Native",
+        "TypeScript",
+        "Native Module",
+        "CI/CD",
+        "Firebase",
+        "Over-the-Air-Updates",
+        "NestJS",
+        "GraphQL"
+      ]
+    },
+    {
+      "company": "Ivvest",
+      "companyUrl": "https://ivvest.com",
+      "title": "Internet der Dinge Ingenieur",
+      "years": "11.2020 - 04.2021",
+      "mainTechnology": "Internet der Dinge",
+      "slug": "ivvest",
+      "technologies": [
+        "Arduino",
+        "Raspberry Pi",
+        "Prozessautomatisierung",
+        "Netzwerkdesign"
+      ]
+    },
+    {
+      "company": "We.The.Makers",
+      "companyUrl": "https://wethemakers.dev",
+      "title": "Full Stack Software-Ingenieur",
+      "years": "01.2019 - 05.2020",
+      "mainTechnology": "NestJS",
+      "slug": "wethemakers",
+      "technologies": [
+        "TypeScript",
+        "NestJS",
+        "GraphQL",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "React Native",
+        "MongoDB"
+      ]
+    },
+    {
+      "company": "cg imagine+invent",
+      "companyUrl": "https://cgiandi.com",
+      "title": "Junior Full Stack Ingenieur",
+      "years": "01.2018 - 12.2018",
+      "mainTechnology": "React Native",
+      "slug": "cgiandi",
+      "technologies": [
+        "TypeScript",
+        "React Hooks",
+        "Axios",
+        "Formik",
+        "Redux",
+        "React Context",
+        "UI Komponenten"
+      ]
+    }
+  ],
+  "social": [
+    {
+      "name": "github",
+      "url": "https://github.com/mohshbool",
+      "class": "fab fa-github"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/mohammad-shbool",
+      "class": "fab fa-linkedin"
+    },
+    {
+      "name": "email",
+      "url": "mailto:contact@shbool.net",
+      "class": "fa fa-paper-plane"
+    }
+  ],
+  "extra": {
+    "photo-by": "Foto von",
+    "on": "auf",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "skills": "Fähigkeiten",
+    "experience": "Erfahrung",
+    "copyright": "Urheberrechte"
+  }
+}

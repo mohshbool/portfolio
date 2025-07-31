@@ -39,3 +39,13 @@ export interface Social {
   url: string;
   class: string;
 }
+
+export interface Extra {
+  'photo-by': string;
+  on: string;
+  about: string;
+  projects: string;
+  skills: string;
+  experience: string;
+  copyright: string;
+}

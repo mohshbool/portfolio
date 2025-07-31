@@ -1,12 +1,13 @@
 import React from 'react';
-import { Social } from 'data';
+import { Social } from 'data/data';
 
 interface FooterProps {
   social: Social[];
   name: string;
+  copyright: string;
 }
 
-const Footer: React.FC<FooterProps> = ({ social, name }) => {
+const Footer: React.FC<FooterProps> = ({ social, name, copyright }) => {
   return (
     <footer>
       <div className="col-md-12">
@@ -23,7 +24,7 @@ const Footer: React.FC<FooterProps> = ({ social, name }) => {
         <div className="copyright py-4 text-center">
           <div className="container">
             <small>
-              Copyright &copy; {name} {new Date().getFullYear()}
+              {copyright} &copy; {name} {new Date().getFullYear()}
             </small>
           </div>
         </div>

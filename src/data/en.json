@@ -1,4 +1,5 @@
 {
+  "language": "en",
   "header": {
     "name": "Mohammad Shbool",
     "titles": ["Senior Software Engineer", "Senior Mobile Engineer"]
@@ -191,16 +192,20 @@
   ],
   "skills": [
     {
+      "name": "React",
+      "class": "devicon-react-plain"
+    },
+    {
+      "name": "React Native",
+      "class": "devicon-react-plain"
+    },
+    {
       "name": "TypeScript",
       "class": "devicon-typescript-plain"
     },
     {
       "name": "Python",
       "class": "devicon-python-plain"
-    },
-    {
-      "name": "React",
-      "class": "devicon-react-plain"
     },
     {
       "name": "Node.js",
@@ -383,5 +388,14 @@
       "url": "mailto:contact@shbool.net",
       "class": "fa fa-paper-plane"
     }
-  ]
+  ],
+  "extra": {
+    "photo-by": "Photo by",
+    "on": "on",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "copyright": "Copyright"
+  }
 }

@@ -1,17 +1,18 @@
-import { Technology } from 'data';
+import { Technology } from 'data/data';
 import React from 'react';
 
 interface SkillsProps {
   data: Technology[];
+  title: string;
 }
 
-const Skills: React.FC<SkillsProps> = ({ data }) => {
+const Skills: React.FC<SkillsProps> = ({ data, title }) => {
   return (
     <section id="skills">
       <div className="col-md-12">
         <div className="col-md-12">
           <h1 className="section-title">
-            <span className="text-white">Skills</span>
+            <span className="text-white">{title}</span>
           </h1>
         </div>
         <div className="col-md-12 text-center">

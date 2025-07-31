@@ -5,19 +5,20 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Badge from 'react-bootstrap/Badge';
-import { Experience as ExperienceData } from 'data.d';
+import { Experience as ExperienceData } from 'data/data';
 
 interface ExperienceProps {
   data: ExperienceData[];
+  title: string;
 }
 
-const Experience: React.FC<ExperienceProps> = ({ data }) => {
+const Experience: React.FC<ExperienceProps> = ({ data, title }) => {
   return (
     <section id="resume" className="pb-5">
       <div className="col-md-12 mx-auto">
         <div className="col-md-12">
           <h1 className="section-title">
-            <span style={{ textAlign: 'center' }}>Experience</span>
+            <span style={{ textAlign: 'center' }}>{title}</span>
           </h1>
         </div>
       </div>

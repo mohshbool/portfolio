@@ -3,18 +3,19 @@ import { Icon } from '@iconify/react';
 import reactIcon from '@iconify/icons-logos/react';
 import appleIcon from '@iconify/icons-logos/linux-tux';
 import nestIcon from '@iconify/icons-logos/nodejs-icon-alt';
-import { About as AboutData } from '../data.d';
+import { About as AboutData } from '../data/data';
 
 interface AboutProps {
   data: AboutData;
+  title: string;
 }
 
-const About: React.FC<AboutProps> = ({ data }) => {
+const About: React.FC<AboutProps> = ({ data, title }) => {
   return (
     <section id="about">
       <div className="col-md-12">
         <h1>
-          <span>About</span>
+          <span>{title}</span>
         </h1>
         <div className="row center mx-auto mb-5">
           <div className="col-md-4 mb-5 center">
