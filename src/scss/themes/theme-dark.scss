@@ -1,5 +1,6 @@
+@use '../dark-slider.scss';
+
 body[data-theme='dark'] {
-  @import '../dark-slider.scss';
 
   .github-corner svg {
     .octo-body,

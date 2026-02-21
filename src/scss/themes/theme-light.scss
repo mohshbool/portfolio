@@ -1,5 +1,6 @@
+@use '../light-slider.scss';
+
 body[data-theme='light'] {
-  @import '../light-slider.scss';
 
   .slider-tab {
     background-color: var(--primary-color);
