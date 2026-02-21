@@ -1,4 +1,6 @@
-import { Technology } from 'data/data';
+'use client';
+
+import { Technology } from '@/data/data';
 import React from 'react';
 
 interface SkillsProps {

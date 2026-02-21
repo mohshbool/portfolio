@@ -1,6 +1,8 @@
+'use client';
+
 import React, { useState } from 'react';
 import ProjectDetailsModal from './ProjectDetailsModal';
-import { Project } from 'data/data';
+import { Project } from '@/data/data';
 
 interface ProjectsProps {
   data: Project[];
@@ -40,7 +42,7 @@ const Projects: React.FC<ProjectsProps> = ({ data, title }) => {
         </h1>
         <div className="col-md-12 mx-auto">
           <div className="row mx-auto">
-            {data.map(project => (
+            {data.map((project) => (
               <div
                 className="col-sm-12 col-md-6 col-lg-4 project-container"
                 key={project.title}
@@ -50,8 +52,8 @@ const Projects: React.FC<ProjectsProps> = ({ data, title }) => {
                   <div className="foto" onClick={() => showModal(project)}>
                     <div>
                       <img
-                        src={`images/portfolio/${project.slug}/${project.images[0]}`}
-                        alt="projectImages"
+                        src={`/images/portfolio/${project.slug}/${project.images[0]}`}
+                        alt={project.title}
                         height="230"
                         style={{
                           marginBottom: 0,

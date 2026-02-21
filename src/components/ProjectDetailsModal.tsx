@@ -1,14 +1,10 @@
+'use client';
+
 import React from 'react';
 import { Modal } from 'react-bootstrap';
 import AwesomeSlider from 'react-awesome-slider';
-import { Project } from 'data/data';
-
-// @ts-expect-error styles import
-import AwesomeSliderStyles from '../scss/light-slider.scss';
-// @ts-expect-error styles import
-import AwesomeSliderStyles2 from '../scss/dark-slider.scss';
-
-import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
+import { Icon } from '@iconify/react';
+import { Project } from '@/data/data';
 
 interface ProjectDetailsModalProps {
   show: boolean;
@@ -36,32 +32,31 @@ const ProjectDetailsModal: React.FC<ProjectDetailsModalProps> = ({
       <div className="col-md-12">
         <div className="col-md-10 mx-auto" style={{ paddingBottom: '50px' }}>
           <div className="slider-tab">
-            <span
-              className="iconify slider-iconfiy"
-              data-icon="emojione:red-circle"
-              data-inline="false"
+            <Icon
+              icon="emojione:red-circle"
+              className="slider-iconfiy"
+              inline={true}
               style={{ marginLeft: '5px' }}
-            ></span>{' '}
+            />{' '}
             &nbsp;{' '}
-            <span
-              className="iconify slider-iconfiy"
-              data-icon="twemoji:yellow-circle"
-              data-inline="false"
-            ></span>{' '}
+            <Icon
+              icon="twemoji:yellow-circle"
+              className="slider-iconfiy"
+              inline={true}
+            />{' '}
             &nbsp;{' '}
-            <span
-              className="iconify slider-iconfiy"
-              data-icon="twemoji:green-circle"
-              data-inline="false"
-            ></span>
+            <Icon
+              icon="twemoji:green-circle"
+              className="slider-iconfiy"
+              inline={true}
+            />
           </div>
-          <AwesomeSlider
-            cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
-            animation="scaleOutAnimation"
-            className="slider-image"
-          >
+          <AwesomeSlider animation="scaleOutAnimation" className="slider-image">
             {data?.images.map((elem, i) => (
-              <div key={i} data-src={`images/portfolio/${data.slug}/${elem}`} />
+              <div
+                key={i}
+                data-src={`/images/portfolio/${data.slug}/${elem}`}
+              />
             ))}
           </AwesomeSlider>
         </div>

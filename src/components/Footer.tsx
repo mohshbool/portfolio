@@ -1,5 +1,7 @@
+'use client';
+
 import React from 'react';
-import { Social } from 'data/data';
+import { Social } from '@/data/data';
 
 interface FooterProps {
   social: Social[];
@@ -12,7 +14,7 @@ const Footer: React.FC<FooterProps> = ({ social, name, copyright }) => {
     <footer>
       <div className="col-md-12">
         <div className="social-links">
-          {social.map(network => (
+          {social.map((network) => (
             <span key={network.name} className="m-4">
               <a href={network.url} target="_blank" rel="noopener noreferrer">
                 <i className={network.class}></i>

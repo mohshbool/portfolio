@@ -1,8 +1,12 @@
+'use client';
+
 import React, { memo, useCallback, useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import Typical from 'react-typical';
 import Switch from 'react-switch';
-import { Header as DATA } from '../data/data';
-import './Header.css';
+import { Icon } from '@iconify/react';
+import { Header as DATA } from '@/data/data';
+import styles from './Header.module.css';
 
 const BACKGROUND_IMAGES_CREDITS = {
   portrait_light: {
@@ -44,10 +48,20 @@ const Header: React.FC<HeaderProps> = ({
 }) => {
   const switchRef = useRef<Switch>(null);
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
-  const [isPortrait, setIsPortrait] = useState<boolean>(
-    window.innerHeight > window.innerWidth
-  );
+  const [isPortrait, setIsPortrait] = useState<boolean>(false);
   const [isAtTop, setisAtTop] = useState(true);
+  const [windowHeight, setWindowHeight] = useState(0);
+
+  useEffect(() => {
+    // Set initial window dimensions
+    setWindowHeight(window.innerHeight);
+    setIsPortrait(window.innerHeight > window.innerWidth);
+
+    // Set dark mode on initial load if user prefers dark mode
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      triggerSwitch();
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,29 +82,19 @@ const Header: React.FC<HeaderProps> = ({
       });
     };
 
-    document
-      .getElementById('srolldown-container')
-      ?.addEventListener('click', handleClick);
-    return () =>
-      document
-        .getElementById('srolldown-container')
-        ?.removeEventListener('click', handleClick);
+    const scrollContainer = document.getElementById('srolldown-container');
+    scrollContainer?.addEventListener('click', handleClick);
+    return () => scrollContainer?.removeEventListener('click', handleClick);
   }, []);
 
   useEffect(() => {
     const handleResize = () => {
+      setWindowHeight(window.innerHeight);
       setIsPortrait(window.innerHeight - 50 > window.innerWidth);
     };
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  useEffect(() => {
-    // set dark mode on inital load if user prefers dark mode
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      triggerSwitch();
-    }
   }, []);
 
   // set theme in dom
@@ -114,7 +118,7 @@ const Header: React.FC<HeaderProps> = ({
   const triggerSwitch = useCallback(() => {
     if (switchRef.current) {
       switchRef.current.setState(prevState => ({
-        // @ts-expect-error hard set of swtich
+        // @ts-expect-error hard set of switch
         checked: !prevState.checked,
       }));
       onThemeSwitchChange(!isDarkTheme);
@@ -144,19 +148,24 @@ const Header: React.FC<HeaderProps> = ({
     `https://unsplash.com/${path}?utm_medium=referral&utm_source=shbool.net`;
 
   return (
-    <header id="home" style={{ height: window.innerHeight, display: 'block' }}>
+    <header
+      id="home"
+      style={{ height: windowHeight || '100vh', display: 'block' }}
+    >
       <div className="image-background">
-        <img src={`images/background/${backgroundKey}.jpg?v=${Date.now()}`} />
+        <img
+          src={`/images/background/${backgroundKey}.jpg`}
+          alt="Background"
+        />
         <div className="image-overlay"></div>
       </div>
       <div className="row aligner" style={{ height: '100%' }}>
         <div className="col-md-12">
           <div>
-            <span
-              className="iconify header-icon"
-              data-icon="la:laptop-code"
-              data-inline="false"
-            ></span>
+            <Icon
+              icon="la:laptop-code"
+              className="header-icon"
+            />
             <br />
             <h1 className="mb-0 header-name">
               <Typical steps={[data.name]} wrapper="p" />
@@ -174,10 +183,8 @@ const Header: React.FC<HeaderProps> = ({
               width={90}
               height={40}
               uncheckedIcon={
-                <span
-                  className="iconify"
-                  data-icon="twemoji:owl"
-                  data-inline="false"
+                <Icon
+                  icon="twemoji:owl"
                   style={{
                     display: 'block',
                     height: '100%',
@@ -186,13 +193,11 @@ const Header: React.FC<HeaderProps> = ({
                     marginLeft: '20px',
                     color: '#353239',
                   }}
-                ></span>
+                />
               }
               checkedIcon={
-                <span
-                  className="iconify"
-                  data-icon="noto-v1:sun-with-face"
-                  data-inline="false"
+                <Icon
+                  icon="noto-v1:sun-with-face"
                   style={{
                     display: 'block',
                     height: '100%',
@@ -201,21 +206,20 @@ const Header: React.FC<HeaderProps> = ({
                     marginLeft: '10px',
                     color: '#353239',
                   }}
-                ></span>
+                />
               }
               id="icon-switch"
             />
             <div className="language-switch-container">
               <img
-                src={
-                  process.env.PUBLIC_URL +
-                  '/images/header/united-kingdom-flag.png'
-                }
+                src="/images/header/united-kingdom-flag.png"
+                alt="English"
                 className={language === 'en' ? 'selected' : ''}
                 onClick={() => setLanguage('en')}
               />
               <img
-                src={process.env.PUBLIC_URL + '/images/header/germany-flag.png'}
+                src="/images/header/germany-flag.png"
+                alt="German"
                 className={language === 'de' ? 'selected' : ''}
                 onClick={() => setLanguage('de')}
               />
@@ -256,14 +260,20 @@ const Header: React.FC<HeaderProps> = ({
         <div
           className="scrolldown-arrow"
           style={{
-            bottom: window.innerWidth > 500 ? '40px' : '30px',
+            bottom:
+              typeof window !== 'undefined' && window.innerWidth > 500
+                ? '40px'
+                : '30px',
             display: isAtTop ? 'block' : 'none',
           }}
         />
         <div
           className="scrolldown-arrow"
           style={{
-            bottom: window.innerWidth > 500 ? '55px' : '40px',
+            bottom:
+              typeof window !== 'undefined' && window.innerWidth > 500
+                ? '55px'
+                : '40px',
             display: isAtTop ? 'block' : 'none',
           }}
         />

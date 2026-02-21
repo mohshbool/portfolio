@@ -1,9 +1,12 @@
+'use client';
+
 import React from 'react';
+import Image from 'next/image';
 import { Icon } from '@iconify/react';
 import reactIcon from '@iconify/icons-logos/react';
 import appleIcon from '@iconify/icons-logos/linux-tux';
 import nestIcon from '@iconify/icons-logos/nodejs-icon-alt';
-import { About as AboutData } from '../data/data';
+import { About as AboutData } from '@/data/data';
 
 interface AboutProps {
   data: AboutData;
@@ -23,7 +26,7 @@ const About: React.FC<AboutProps> = ({ data, title }) => {
               <span style={{ cursor: 'auto' }}>
                 <img
                   height="300px"
-                  src={`images/${data.image}`}
+                  src={`/images/${data.image}`}
                   alt="Avatar placeholder"
                 />
                 <Icon
@@ -46,23 +49,11 @@ const About: React.FC<AboutProps> = ({ data, title }) => {
             <div className="col-md-10">
               <div className="card">
                 <div className="card-header">
-                  <span
-                    className="iconify"
-                    data-icon="emojione:red-circle"
-                    data-inline="false"
-                  ></span>{' '}
+                  <Icon icon="emojione:red-circle" inline={true} />{' '}
                   &nbsp;{' '}
-                  <span
-                    className="iconify"
-                    data-icon="twemoji:yellow-circle"
-                    data-inline="false"
-                  ></span>{' '}
+                  <Icon icon="twemoji:yellow-circle" inline={true} />{' '}
                   &nbsp;{' '}
-                  <span
-                    className="iconify"
-                    data-icon="twemoji:green-circle"
-                    data-inline="false"
-                  ></span>
+                  <Icon icon="twemoji:green-circle" inline={true} />
                 </div>
                 <div
                   className="card-body font-trebuchet text-justify ml-3 mr-3"
@@ -76,11 +67,11 @@ const About: React.FC<AboutProps> = ({ data, title }) => {
                   <span className="wave">{data.title} :) </span>
                   <br />
                   <br />
-                  {data.description.map(text => (
-                    <>
+                  {data.description.map((text, index) => (
+                    <React.Fragment key={index}>
                       {text}
                       <br />
-                    </>
+                    </React.Fragment>
                   ))}
                 </div>
               </div>

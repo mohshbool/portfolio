@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import {
   VerticalTimeline,
@@ -5,7 +7,7 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Badge from 'react-bootstrap/Badge';
-import { Experience as ExperienceData } from 'data/data';
+import { Experience as ExperienceData } from '@/data/data';
 
 interface ExperienceProps {
   data: ExperienceData[];
@@ -35,9 +37,10 @@ const Experience: React.FC<ExperienceProps> = ({ data, title }) => {
               }}
               icon={
                 <img
-                  src={`images/experience/${experience.slug}.png`}
+                  src={`/images/experience/${experience.slug}.png`}
                   aria-placeholder={experience.company}
                   className="experience-logo"
+                  alt={experience.company}
                 />
               }
               key={i}
