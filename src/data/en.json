@@ -69,8 +69,8 @@
       "images": ["p1.png", "p2.png"],
       "technologies": [
         {
-          "class": "devicon-osi-plain",
-          "name": "Open Source"
+          "class": "devicon-github-original",
+          "name": "Open-Source"
         },
         {
           "class": "devicon-react-plain",
@@ -85,12 +85,8 @@
           "name": "Redux"
         },
         {
-          "class": "devicon-expressjs-plain",
-          "name": "Express JS"
-        },
-        {
-          "class": "devicon-rxjs-plain",
-          "name": "RxJS"
+          "class": "devicon-nodejs-plain",
+          "name": "Node JS"
         },
         {
           "class": "devicon-mongodb-plain",
@@ -242,10 +238,25 @@
   ],
   "experience": [
     {
+      "company": "Erasys",
+      "companyUrl": "https://erasys.net",
+      "title": "Mobile Engineer",
+      "years": "10.2025 - Present",
+      "mainTechnology": "React Native",
+      "slug": "erasys",
+      "technologies": [
+        "React Native",
+        "TypeScript",
+        "iOS",
+        "Android",
+        "Mobile Development"
+      ]
+    },
+    {
       "company": "Jordan Open Source Association",
       "companyUrl": "https://josa.ngo",
       "title": "Project Manager",
-      "years": "11.2024 - Present",
+      "years": "11.2024 - 09.2025",
       "mainTechnology": "Project Management",
       "slug": "josa",
       "technologies": [
@@ -258,8 +269,8 @@
     {
       "company": "Reach World",
       "companyUrl": "https://reachworld.com",
-      "title": "Lead Mobile Engineer",
-      "years": "09.2023 - present",
+      "title": "Senior Mobile Engineer",
+      "years": "09.2023 - 09.2025",
       "mainTechnology": "React Native",
       "slug": "reach-world",
       "technologies": [
@@ -269,7 +280,7 @@
         "Analytics",
         "Deep Linking",
         "In-App Purchases",
-        "Techhnical Writing"
+        "Technical Writing"
       ]
     },
     {
@@ -277,7 +288,7 @@
       "companyUrl": "https://josa.ngo",
       "title": "Community Officer",
       "years": "03.2022 - 08.2023",
-      "mainTechnology": "Open Source",
+      "mainTechnology": "Open-Source",
       "slug": "josa",
       "technologies": [
         "Project Management",

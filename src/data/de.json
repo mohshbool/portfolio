@@ -69,8 +69,8 @@
       "images": ["p1.png", "p2.png"],
       "technologies": [
         {
-          "class": "devicon-osi-plain",
-          "name": "Open Source"
+          "class": "devicon-github-original",
+          "name": "Open-Source"
         },
         {
           "class": "devicon-react-plain",
@@ -85,7 +85,7 @@
           "name": "Redux"
         },
         {
-          "class": "devicon-expressjs-plain",
+          "class": "devicon-nextjs-original-wordmark",
           "name": "Express JS"
         },
         {
@@ -242,10 +242,25 @@
   ],
   "experience": [
     {
+      "company": "Erasys",
+      "companyUrl": "https://erasys.net",
+      "title": "Mobile-Ingenieur",
+      "years": "10.2025 - Gegenwart",
+      "mainTechnology": "React Native",
+      "slug": "erasys",
+      "technologies": [
+        "React Native",
+        "TypeScript",
+        "iOS",
+        "Android",
+        "Mobile-Entwicklung"
+      ]
+    },
+    {
       "company": "Jordan Open Source Association",
       "companyUrl": "https://josa.ngo",
       "title": "Projektmanager",
-      "years": "11.2024 - Gegenwart",
+      "years": "11.2024 - 09.2025",
       "mainTechnology": "Projektmanagement",
       "slug": "josa",
       "technologies": [
@@ -258,8 +273,8 @@
     {
       "company": "Reach World",
       "companyUrl": "https://reachworld.com",
-      "title": "Lead Mobile-Ingenieur",
-      "years": "09.2023 - Gegenwart",
+      "title": "Senior Mobile-Ingenieur",
+      "years": "09.2023 - 09.2025",
       "mainTechnology": "React Native",
       "slug": "reach-world",
       "technologies": [
@@ -277,7 +292,7 @@
       "companyUrl": "https://josa.ngo",
       "title": "Community-Beauftragter",
       "years": "03.2022 - 08.2023",
-      "mainTechnology": "Open Source",
+      "mainTechnology": "Open-Source",
       "slug": "josa",
       "technologies": [
         "Projektmanagement",

@@ -311,12 +311,32 @@ header h1 {
 
 .slider-image {
   border: 5px solid var(--primary-color);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   cursor: pointer;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 60vh;
+  }
+
+  .awssld__content {
+    background-color: transparent;
+
+    img {
+      object-fit: contain;
+    }
+  }
 }
 
 .slider-tab {
   background-color: var(--primary-color);
   height: 25px;
+  padding-left: 5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .slider-iconfiy {
@@ -347,6 +367,8 @@ header h1 {
 .foto img {
   display: block;
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .foto div {
@@ -429,12 +451,91 @@ header h1 {
 
 .project-container {
   filter: drop-shadow(2px 2px 5px #8c8c8c);
+  padding: 10px;
 
   div.foto div {
     border-radius: 3px;
+    padding: 15px;
   }
   img {
     border-radius: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    padding: 15px;
+    margin-bottom: 20px;
+
+    div.foto div {
+      padding: 12px;
+    }
+  }
+
+  .slider-image {
+    border-width: 3px;
+
+    img {
+      max-height: 50vh;
+      object-fit: contain;
+    }
+  }
+
+  .modal-inside {
+    .modal-content {
+      padding: 8px;
+    }
+
+    .col-md-10 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .list-inline-item {
+      margin: 0.5rem !important;
+
+      .skills-icon {
+        font-size: 200% !important;
+
+        p {
+          font-size: 50% !important;
+        }
+      }
+    }
+
+    h3 {
+      padding: 15px 5px 10px 5px !important;
+      margin-top: 15px;
+    }
+
+    .modal-description {
+      padding: 15px 10px 0 10px;
+      margin-bottom: 20px;
+    }
+
+    .list-inline {
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+  }
+
+  #skills {
+    .list-inline-item {
+      margin: 0.5rem !important;
+
+      i {
+        font-size: 160% !important;
+
+        p {
+          font-size: 40% !important;
+        }
+      }
+    }
+
+    .skills-tile {
+      width: 80px;
+      padding: 8px 8px 4px 8px;
+    }
   }
 }
 
@@ -536,6 +637,7 @@ header h1 {
 
 .modal-inside .modal-content {
   background: var(--secondary-color);
+  padding: 10px;
   .skills-icon {
     color: var(--primary-color);
   }
@@ -590,24 +692,30 @@ header h1 {
   text-align: right;
   padding: 10px 15px 10px 15px;
   cursor: pointer;
+  position: relative;
+  z-index: 1000;
+
+  &:hover .close-icon {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
 }
 
 .close-icon {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
   font-weight: lighter !important;
+  display: inline-block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
-  &:hover {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
 }
 
 .modal-description {
   text-align: justify;
-  padding: 5px 5px 0 5px;
-  margin-bottom: 20px;
+  padding: 15px 5px 0 5px;
+  margin-bottom: 25px;
   font-size: 12px;
 }
 

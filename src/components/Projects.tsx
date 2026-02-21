@@ -54,11 +54,14 @@ const Projects: React.FC<ProjectsProps> = ({ data, title }) => {
                       <img
                         src={`/images/portfolio/${project.slug}/${project.images[0]}`}
                         alt={project.title}
-                        height="230"
                         style={{
                           marginBottom: 0,
                           paddingBottom: 0,
                           position: 'relative',
+                          width: '100%',
+                          height: 'auto',
+                          objectFit: 'cover',
+                          aspectRatio: '16 / 9'
                         }}
                       />
                       <span className="project-date">{project.startDate}</span>

@@ -23,14 +23,29 @@ const ProjectDetailsModal: React.FC<ProjectDetailsModalProps> = ({
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
-      onBackdropClick={onHide}
+      onHide={onHide}
       className="modal-inside"
     >
-      <span onClick={onHide} className="modal-close">
-        <i className="fas fa-times fa-3x close-icon"></i>
+      <span
+        onClick={onHide}
+        className="modal-close"
+        style={{ display: 'block', position: 'relative', zIndex: 1000 }}
+      >
+        <Icon
+          icon="mdi:close"
+          className="close-icon"
+          style={{ fontSize: '2.5rem', display: 'inline-block' }}
+        />
       </span>
       <div className="col-md-12">
-        <div className="col-md-10 mx-auto" style={{ paddingBottom: '50px' }}>
+        <div
+          className="col-md-10 mx-auto"
+          style={{
+            paddingBottom: '30px',
+            paddingTop: '10px',
+            padding: '10px 15px 30px',
+          }}
+        >
           <div className="slider-tab">
             <Icon
               icon="emojione:red-circle"
@@ -51,17 +66,30 @@ const ProjectDetailsModal: React.FC<ProjectDetailsModalProps> = ({
               inline={true}
             />
           </div>
-          <AwesomeSlider animation="scaleOutAnimation" className="slider-image">
+          <AwesomeSlider
+            animation="scaleOutAnimation"
+            className="slider-image"
+            style={{
+              aspectRatio: '16 / 9',
+              maxWidth: '100%',
+            }}
+          >
             {data?.images.map((elem, i) => (
               <div
                 key={i}
                 data-src={`/images/portfolio/${data.slug}/${elem}`}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  background: 'transparent',
+                }}
               />
             ))}
           </AwesomeSlider>
         </div>
-        <div className="col-md-10 mx-auto">
-          <h3 style={{ padding: '5px 5px 0 5px' }}>
+        <div className="col-md-10 mx-auto" style={{ padding: '0 15px' }}>
+          <h3 style={{ padding: '15px 5px 10px 5px' }}>
             {data?.title}
             <a
               href={data?.url}
@@ -76,8 +104,11 @@ const ProjectDetailsModal: React.FC<ProjectDetailsModalProps> = ({
             </a>
           </h3>
           <p className="modal-description">{data?.description}</p>
-          <div className="col-md-12 text-center">
-            <ul className="list-inline mx-auto">
+          <div className="col-md-12 text-center" style={{}}>
+            <ul
+              className="list-inline mx-auto"
+              style={{ marginBottom: '30px', paddingTop: '10px' }}
+            >
               {data?.technologies.map((technology, i) => (
                 <li className="list-inline-item mx-3" key={i}>
                   <span>
